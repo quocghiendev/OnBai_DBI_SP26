@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuizQuestion = null;
   let attemptsLeft = 2;
   let quizCompletedState = false;
+  const REQUIRED_CORRECT_ANSWERS = 3;
+  let quizUnlockProgress = 0;
 
   // Block Templates (Matrix shapes & Colors)
   const SHAPES = [
@@ -229,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
     correctAnswersCount = 0;
     currentPhase = "free";
     dockUnlocked = true;
+    quizUnlockProgress = 0;
     selectedBlockIndex = null;
 
     updateScoreDisplay();
@@ -247,11 +250,11 @@ document.addEventListener("DOMContentLoaded", () => {
       highScoreValEl.textContent = highScore;
     }
 
-    if (currentPhase === "free") {
-      phaseBadgeEl.textContent = "3 Khối Free";
+    if (dockUnlocked) {
+      phaseBadgeEl.textContent = currentPhase === "free" ? "Lượt ghép đầu tiên" : "Đã mở khóa 3 khối";
       phaseBadgeEl.className = "phase-badge phase-free";
     } else {
-      phaseBadgeEl.textContent = "3 Khối Trắc Nghiệm";
+      phaseBadgeEl.textContent = `Trả lời đúng ${quizUnlockProgress}/${REQUIRED_CORRECT_ANSWERS}`;
       phaseBadgeEl.className = "phase-badge phase-quiz";
     }
   }
@@ -362,19 +365,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       slotEl.appendChild(miniGrid);
 
-      // Pointer Events work for mouse, pen and touch. A small movement
-      // threshold keeps a normal tap separate from an intentional drag.
+      slotEl.appendChild(miniGrid);
+
+      // Unified Pointer & Touch Dragging + Click-to-Select
       slotEl.onpointerdown = (e) => {
         if (!dockUnlocked) return;
-        preparePointerDrag(e, idx, slotEl);
+        startPointerDrag(e, idx);
       };
 
-      slotEl.onclick = (e) => {
-        if (suppressNextClick) {
-          suppressNextClick = false;
-          e.preventDefault();
-          return;
-        }
+      slotEl.onclick = () => {
         if (selectedBlockIndex === idx) {
           selectedBlockIndex = null;
         } else {
@@ -386,15 +385,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Mobile-friendly custom drag manager. Pointer Events cover mouse, pen and touch.
-  const DRAG_START_DISTANCE = 7;
-  let suppressNextClick = false;
-  let pendingDragState = null;
-
+  // Custom Pointer & Touch Drag Manager for Smooth 60fps Dragging + Ghost Shadow on Grid
   let activeDragState = {
     isDragging: false,
-    pointerId: null,
-    sourceEl: null,
     slotIndex: null,
     block: null,
     cloneEl: null,
@@ -403,33 +396,17 @@ document.addEventListener("DOMContentLoaded", () => {
     isValidPos: false,
   };
 
-  function preparePointerDrag(e, slotIdx, sourceEl) {
-    if (!dockUnlocked || e.button > 0) return;
+  function startPointerDrag(e, slotIdx) {
+    if (!dockUnlocked) return;
     const block = currentDockBlocks[slotIdx];
     if (!block) return;
 
-    pendingDragState = {
-      pointerId: e.pointerId,
-      slotIndex: slotIdx,
-      sourceEl,
-      startX: e.clientX,
-      startY: e.clientY,
-    };
-
-    sourceEl.setPointerCapture?.(e.pointerId);
-  }
-
-  function startPointerDrag(e, pending) {
-    const block = currentDockBlocks[pending.slotIndex];
-    if (!block) return;
-
-    suppressNextClick = true;
-    selectedBlockIndex = pending.slotIndex;
+    selectedBlockIndex = slotIdx;
     renderDock();
-    document.body.classList.add("is-dragging-block");
 
     if (window.soundManager) window.soundManager.playPick();
 
+    // Create floating clone avatar following cursor
     const cloneEl = document.createElement("div");
     cloneEl.className = "drag-floating-clone";
 
@@ -449,43 +426,42 @@ document.addEventListener("DOMContentLoaded", () => {
         miniGrid.appendChild(miniCell);
       }
     }
-
     cloneEl.appendChild(miniGrid);
     document.body.appendChild(cloneEl);
 
+    const clientX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+    const clientY = e.clientY || (e.touches && e.touches[0].clientY) || 0;
+    cloneEl.style.transform = `translate(${clientX}px, ${clientY}px) translate(-50%, -85%)`;
+
     activeDragState = {
       isDragging: true,
-      pointerId: e.pointerId,
-      sourceEl: pending.sourceEl,
-      slotIndex: pending.slotIndex,
-      block,
-      cloneEl,
+      slotIndex: slotIdx,
+      block: block,
+      cloneEl: cloneEl,
       targetRow: null,
       targetCol: null,
       isValidPos: false,
     };
 
-    updateDragPointerPosition(e.clientX, e.clientY, e.pointerType);
+    updateDragPointerPosition(clientX, clientY);
   }
 
-  function getDragLift(pointerType) {
-    return pointerType === "touch" ? 92 : 42;
-  }
-
-  function updateDragPointerPosition(clientX, clientY, pointerType = "mouse") {
+  function updateDragPointerPosition(clientX, clientY) {
     if (!activeDragState.isDragging || !activeDragState.cloneEl) return;
 
-    const lift = getDragLift(pointerType);
-    const visualY = clientY - lift;
-    activeDragState.cloneEl.style.transform = `translate3d(${clientX}px, ${visualY}px, 0) translate(-50%, -50%)`;
+    // Move floating block avatar smoothly
+    activeDragState.cloneEl.style.transform = `translate(${clientX}px, ${clientY}px) translate(-50%, -85%)`;
 
+    // Calculate grid ghost shadow position
     const gridRect = gridBoardEl.getBoundingClientRect();
     const cellSize = gridRect.width / GRID_SIZE;
+
     const blockPixelW = activeDragState.block.cols * cellSize;
     const blockPixelH = activeDragState.block.rows * cellSize;
 
     const relX = clientX - gridRect.left - blockPixelW / 2 + cellSize / 2;
-    const relY = visualY - gridRect.top - blockPixelH / 2 + cellSize / 2;
+    const relY = clientY - gridRect.top - blockPixelH / 2 + cellSize / 2;
+
     const col = Math.round(relX / cellSize);
     const row = Math.round(relY / cellSize);
 
@@ -497,14 +473,19 @@ document.addEventListener("DOMContentLoaded", () => {
       activeDragState.targetCol = col;
       activeDragState.isValidPos = valid;
 
+      // Draw Ghost Shadow on Board
       for (let br = 0; br < activeDragState.block.rows; br++) {
         for (let bc = 0; bc < activeDragState.block.cols; bc++) {
-          if (activeDragState.block.matrix[br][bc] !== 1) continue;
-          const tr = row + br;
-          const tc = col + bc;
-          if (tr < 0 || tr >= GRID_SIZE || tc < 0 || tc >= GRID_SIZE) continue;
-          const cellEl = gridBoardEl.querySelector(`[data-row="${tr}"][data-col="${tc}"]`);
-          cellEl?.classList.add(valid ? "ghost-valid" : "ghost-invalid");
+          if (activeDragState.block.matrix[br][bc] === 1) {
+            const tr = row + br;
+            const tc = col + bc;
+            if (tr >= 0 && tr < GRID_SIZE && tc >= 0 && tc < GRID_SIZE) {
+              const cellEl = gridBoardEl.querySelector(`[data-row="${tr}"][data-col="${tc}"]`);
+              if (cellEl) {
+                cellEl.classList.add(valid ? "ghost-valid" : "ghost-invalid");
+              }
+            }
+          }
         }
       }
     } else {
@@ -517,9 +498,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function endPointerDrag() {
     if (!activeDragState.isDragging) return;
 
-    activeDragState.cloneEl?.remove();
-    activeDragState.sourceEl?.releasePointerCapture?.(activeDragState.pointerId);
-    document.body.classList.remove("is-dragging-block");
+    if (activeDragState.cloneEl && activeDragState.cloneEl.parentNode) {
+      activeDragState.cloneEl.parentNode.removeChild(activeDragState.cloneEl);
+    }
+
     clearCellPreviews();
 
     if (activeDragState.isValidPos && activeDragState.targetRow !== null && activeDragState.targetCol !== null) {
@@ -527,38 +509,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     activeDragState = {
-      isDragging: false, pointerId: null, sourceEl: null, slotIndex: null,
-      block: null, cloneEl: null, targetRow: null, targetCol: null, isValidPos: false,
+      isDragging: false,
+      slotIndex: null,
+      block: null,
+      cloneEl: null,
+      targetRow: null,
+      targetCol: null,
+      isValidPos: false,
     };
   }
 
+  // Global Pointer & Touch Drag Listeners
   window.addEventListener("pointermove", (e) => {
-    if (pendingDragState && e.pointerId === pendingDragState.pointerId && !activeDragState.isDragging) {
-      const distance = Math.hypot(e.clientX - pendingDragState.startX, e.clientY - pendingDragState.startY);
-      if (distance >= DRAG_START_DISTANCE) {
-        const pending = pendingDragState;
-        pendingDragState = null;
-        startPointerDrag(e, pending);
-      }
+    if (activeDragState.isDragging) {
+      updateDragPointerPosition(e.clientX, e.clientY);
     }
-
-    if (activeDragState.isDragging && e.pointerId === activeDragState.pointerId) {
-      e.preventDefault();
-      updateDragPointerPosition(e.clientX, e.clientY, e.pointerType);
-    }
-  }, { passive: false });
-
-  window.addEventListener("pointerup", (e) => {
-    if (pendingDragState && e.pointerId === pendingDragState.pointerId) {
-      pendingDragState.sourceEl?.releasePointerCapture?.(e.pointerId);
-      pendingDragState = null;
-    }
-    if (activeDragState.isDragging && e.pointerId === activeDragState.pointerId) endPointerDrag();
   });
 
-  window.addEventListener("pointercancel", (e) => {
-    if (pendingDragState?.pointerId === e.pointerId) pendingDragState = null;
-    if (activeDragState.isDragging && e.pointerId === activeDragState.pointerId) endPointerDrag();
+  window.addEventListener("pointerup", () => {
+    if (activeDragState.isDragging) {
+      endPointerDrag();
+    }
+  });
+
+  window.addEventListener(
+    "touchmove",
+    (e) => {
+      if (activeDragState.isDragging && e.touches.length > 0) {
+        updateDragPointerPosition(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    },
+    { passive: true },
+  );
+
+  window.addEventListener("touchend", () => {
+    if (activeDragState.isDragging) {
+      endPointerDrag();
+    }
   });
 
   function getGradientForColor(col) {
@@ -761,16 +748,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const allEmpty = currentDockBlocks.every((b) => b === null);
 
     if (allEmpty) {
-      if (currentPhase === "free") {
-        currentPhase = "quiz";
-        spawnDockBlocks();
-        updateScoreDisplay();
-        setTimeout(openQuizModal, 400);
-      } else {
-        currentPhase = "free";
-        spawnDockBlocks();
-        updateScoreDisplay();
-      }
+      // Sau mỗi lượt dùng hết 3 khối, khóa lượt tiếp theo và yêu cầu
+      // người chơi trả lời đúng đủ 3 câu hỏi.
+      currentPhase = "quiz";
+      quizUnlockProgress = 0;
+      spawnDockBlocks();
+      updateScoreDisplay();
+      setTimeout(openQuizModal, 400);
     } else {
       renderDock();
     }
@@ -945,20 +929,31 @@ document.addEventListener("DOMContentLoaded", () => {
       optionElement.classList.add("correct");
       disableAllOptions();
 
-      quizFeedbackEl.textContent = "🎉 CHÍNH XÁC! Bạn đã nhận +200 điểm và mở khóa 3 khối tiếp theo!";
-      quizFeedbackEl.className = "quiz-feedback success";
-
-      dockUnlocked = true;
+      quizUnlockProgress++;
       updateScoreDisplay();
 
-      // Show "Tiếp Theo" button to explicitly close modal and start placing blocks
-      unlockQuizBtnEl.textContent = "Vào Game Xếp Khối ➔";
-      unlockQuizBtnEl.style.display = "block";
-      unlockQuizBtnEl.onclick = () => {
-        quizModalEl.classList.remove("active");
-        renderDock();
-        checkGameOver();
-      };
+      if (quizUnlockProgress >= REQUIRED_CORRECT_ANSWERS) {
+        quizFeedbackEl.textContent = `🎉 ĐÃ ĐÚNG ĐỦ ${REQUIRED_CORRECT_ANSWERS} CÂU! Bạn nhận +200 điểm và mở khóa 3 khối tiếp theo!`;
+        quizFeedbackEl.className = "quiz-feedback success";
+        dockUnlocked = true;
+        updateScoreDisplay();
+
+        unlockQuizBtnEl.textContent = "Vào Game Xếp Khối ➔";
+        unlockQuizBtnEl.style.display = "block";
+        unlockQuizBtnEl.onclick = () => {
+          quizModalEl.classList.remove("active");
+          renderDock();
+          checkGameOver();
+        };
+      } else {
+        const remaining = REQUIRED_CORRECT_ANSWERS - quizUnlockProgress;
+        quizFeedbackEl.textContent = `✅ Chính xác! Tiến độ: ${quizUnlockProgress}/${REQUIRED_CORRECT_ANSWERS}. Còn ${remaining} câu đúng để mở khóa.`;
+        quizFeedbackEl.className = "quiz-feedback success";
+
+        unlockQuizBtnEl.textContent = "Câu Hỏi Tiếp Theo ➔";
+        unlockQuizBtnEl.style.display = "block";
+        unlockQuizBtnEl.onclick = () => openQuizModal();
+      }
     } else {
       // INCORRECT ANSWER
       attemptsLeft--;
