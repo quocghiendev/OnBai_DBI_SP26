@@ -1,0 +1,3495 @@
+What data structure will be represented for the hierarchical data model?
+A. Array structure
+B. Table structure
+C. Tree structure
+D. Pointers structure
+Đáp Án : C
+
+The ACID Properties of transactions refer to
+A. Atomicity, consistency, isolation, database
+B. Atomicity, consistency, isolation, durability
+C. Atomicity, consistency, inconsistent, durability
+D. Atomicity, concurrency, isolation, durability
+Đáp Án : B
+
+In SQL, what is a view?
+A. A virtual table based on the result of a SELECT query
+B. A physical table containing aggregated data
+C. A temporary table used for transactions
+D. A stored procedure with read-only access
+Đáp Án : A
+
+In SQL, after grouping data using the GROUP BY clause, the __________ clause is used to filter the groups based on specific conditions. It allows the use of aggregate functions and selects only the groups that satisfy the given criteria.
+A. Where
+B. Having
+C. Group by
+D. With
+Đáp Án : B
+
+How are many-to-many relationships typically represented in the relational model?
+A. By adding attributes to one of the related tables
+B. By creating a new table with foreign keys from both related tables
+C. By denormalizing the database
+D. By creating a new table for each related entity
+Đáp Án : B
+
+QN=2 (6808) What is a database? 
+a. A database is a collection of information that is organized so that it can easily be accessed, managed, and updated
+b. A database is a collection of data files
+c. A database is a collection of records
+d. A database is a collection of tuples
+Đáp Án : a
+
+What is a database?
+A. Organized collection of information that cannot be accessed, updated, and managed
+B. Collection of data or information without organizing
+C. Organized collection of data or information that can be accessed, updated, and managed
+D. Organized collection of data that cannot be updated
+Đáp Án : C
+
+Which of the following describes an SQL cursor?
+A. It allows you to traverse the result set of a query and process each row individually
+B. is a precompiled collection of one or more SQL statements that can be executed as a single unit
+C. A field within a database
+D. Cursors are not related to SQL
+Đáp Án : A
+
+Problems such as redundancy that occur when we try to cram too much into a single relation are called _____________
+A. Normal Form
+B. Anomalies
+C. Decomposing Relations
+D. None of the others
+Đáp Án : B
+
+What is an index?
+A. An index is a database table attribute, which speeds-up data search within a table.
+B. An index is the same as alias.
+C. An index is a special way to join 2 or more tables.
+D. An index is a database row attribute, which speeds-up data search within a table.
+Đáp Án : A
+
+________ returns a relation instance containing all tuples that occur in both R and S.
+A. Intersection
+B. Set-difference
+C. Union
+D. Cross-product
+Đáp Án : A
+
+Which of the following statements is correct when converting from the ERD model to the relational model?
+A. The order of the columns is not important
+B. The order of both rows and columns is important
+C. The order of the rows is important
+D. The order of the columns is important
+Đáp Án : A
+
+What does an RDBMS consist of?
+A. Collection of Tables
+B. Collection of Records
+C. Collection of Keys
+D. Collection of Fields
+Đáp Án : A
+
+Select the most correct answer.
+A. An index is not a data structure used to speed access to tuples of a relation, given values of one or more attributes.
+B. The key to index cannot be any attribute or set of attributes, and need not be the key to the relation.
+C. We can think of the index as a binary search tree of (key, locations) pairs in which a key a is not associated with a set of locations of the tulips.
+D. An index is a data structure used to speed access to tuples of a relation, given values of one or more attributes.
+Đáp Án : D
+
+In an ERD, what role does a primary key play?
+A. It uniquely identifies each record in a table
+B. It establishes relationships between tables
+C. It determines the data type of attributes
+D. It defines the cardinality of relationships
+Đáp Án : A
+
+We can use these ______ in SQL queries and other statements to perform computations that cannot be done with SQL alone.
+A. Trigger
+B. View
+C. Index
+D. Stored-procedure
+Đáp Án : D
+
+The ability to query data, as well as insert, delete, and alter tuples, is offered by___________
+A. TCL (Transaction Control Language)
+B. DCL (Data Control Language)
+C. DDL (Data Definition Language)
+D. DML (Data Manipulation Language)
+Đáp Án : D
+
+What is the difference between a view and a table in SQL? 
+A. Tables can be updated, while the view is displaying data from the query 
+B. Views can store data permanently, while tables are temporary
+C. Tables are created with the CREATE TABLE statement, while views use CREATE VIEW 
+D. Views and tables are functionally equivalent in SQL
+Đáp Án : C
+
+When no specific join type between multiple tables in a query's FROM clause is specified, what type of JOIN is assumed?
+A. INNER
+B. RIGHT
+C. LEFT
+D. FULL
+Đáp Án : A
+
+Which of the following is used to define code that is fired when certain actions or events occur?
+A. You use an application Trigger to fire when certain actions or events occur.
+B. You use an application Cursor to fire when certain actions or events occur.
+C. You use an application Replace to fire when certain actions or events occur.
+D. You use an application Keyword to fire when certain actions or events occur.
+Đáp Án : A
+
+How can you delete a user-defined function in SQL?
+A. DELETE FUNCTION function_name
+B. REMOVE FUNCTION function_name
+C. DROP FUNCTION function_name
+D. ERASE FUNCTION function_name
+Đáp Án : C
+
+What happens if an error occurs during a transaction and it is not explicitly handled or rolled back?
+A. The transaction is automatically committed
+B. The transaction is automatically rolled back
+C. The database becomes read-only
+D. The transaction remains in a pending state
+Đáp Án : B
+
+What is the main disadvantage of having too many indexes on a table?
+A. Improved query performance
+B. Increased storage space
+C. Enhanced data integrity
+D. Fast data modification operations
+Đáp Án : B
+
+What is NOT true about the cursor in SQL?
+A. It is considered the best practice to use when we want insert, update, or delete data in a table of SQL Server.
+B. The cursor allows users to process data from a result set, one row at a time.
+C. Cursors are an alternative to commands, which operate on all rows in a result set at the same time.
+D. Unlike commands, cursors can be used to update data on a row-by-row basis.
+Đáp Án : A
+
+Suppose that we have a relation: R(A,B,C,D) and FD : D->BC
+Which of the following is equivalent to the given dependency function?
+A. D->B and D->C
+B. C->B and C->B
+C. D->B and B->C
+D. C->D and C->B
+Đáp Án : A
+
+According to the technology deployed by the database management system, which of the following is correct?
+A. Locks are used to maintain transactional integrity and consistency.
+B. Cursors are used to maintain transactional integrity and consistency.
+C. Procedures are used to maintain transactional integrity and consistency.
+D. Functions are used to maintain transactional integrity and consistency.
+Đáp Án : A
+
+The SQL keyword BETWEEN is used:
+A. None of the above is correct.
+B. As a wildcard.
+C. To limit the columns displayed.
+D. For ranges.
+Đáp Án : D
+
+In which of the following is a single-entity instance of one type related to many entity instances of another type?
+A. One-to-One Relationship
+B. One-to-Many Relationship
+C. Many-to-Many Relationship
+D. Composite Relationship
+Đáp Án : B
+
+Consider the relation: OrderDetail(orderNumber, productCode, productName, quantity, dateOrdered, salesDiscount)
+And FDs:{ orderNumber, productCode -> quantity
+orderNumber -> dateOrdered
+productCode -> productName, salesDiscount}
+And the key of OrderDetail is {orderNumber, productCode}.
+Which of the following is a full dependency on the key?
+A. orderNumber, productCode -> quantity
+B. orderNumber -> dateOrdered
+C. productCode -> productName
+D. productCode -> productName, salesDiscount
+Đáp Án : A
+
+What are some benefits of normalization when converting an ERD to a relational model?
+A. Increased storage space efficiency
+B. Reduced update anomalies
+C. Simplified database queries
+D. Enhanced data security
+Đáp Án : B
+
+A DELETE command operates on ______ relation.
+A. One
+B. Two
+C. Several
+D. Null
+Đáp Án : A
+
+In SQL, ERD use three types of principle elements to form relationships:
+A. Entity sets, Constraints and Relationships
+B. Attributes, Constraints, and Relationships
+C. Entity sets, Attributes, and Relationships
+D. Entity sets, Attributes and Constraints
+Đáp Án : C
+
+Which of the following represents Armstrong's Axiom of Transitivity?
+A. If A → B, then AC → BC
+B. If A → B and B → C, then A → C
+C. If A → B, then B → A
+D. If A → B, then A → BC
+Đáp Án : B
+
+The DROP TABLE statement:
+A. Deletes the table structure only.
+B. Deletes the table structure along with the table data.
+C. Works whether or not referential integrity constraints would be violated.
+D. Is not an SQL statement.
+Đáp Án : B
+
+In a functional dependency A —> B, what can be said about B?
+A. B is also a superkey
+B. B is a determinant
+C. B is functionally dependent on A
+D. B is a foreign key
+Đáp Án : C
+
+Which of the following is expressed by an E-R diagram?
+A. Relation between process and relationship
+B. Relation between entity and process
+C. Relation between processes
+D. Relation between entities
+Đáp Án : D
+
+What is the result of the below query: SELECT SUBSTRING('FPTUDN', 1, 3) AS 'Substring' 
+A. FPT 
+B. UDN 
+C. T 
+D. TUN
+Đáp Án : A
+
+Consider a relation with schema R(A, B, C, D) and FD's {A-> B, B-> C, B-> D, D->A}. Which of the following is the {A}+ ?
+A. {A}
+B. {A B C D}
+C. {A B C}
+D. {A B}
+Đáp Án : B
+
+In SQL, Which of the following statements is correct?
+A. All relations in 2NF are also in BCNF
+B. All relations in 1NF are also in BCNF
+C. All relations in 3NF are also in BCNF
+D. For any relation schema, there is a dependency-preserving decomposition into 3NF
+Đáp Án : D
+
+What data types can a user-defined function return?
+A. Number type, string type, date and time type, table type
+B. Number type, string type, date type, time type
+C. Number type, string type, binary file type (binary), table type
+Đáp Án : A
+
+If there is more than one key for a relation schema in DBMS, then each key relation schema is classified as?
+A. Prime key
+B. Super key
+C. Candidate key
+D. Primary key
+Đáp Án : C
+
+Which of the following is NOT the binary operation in the relational Algebra?
+A. Project
+B. Cartesian product
+C. Union
+D. Set difference
+Đáp Án : A
+
+In an employee table, to include the attributes whose value always has some value, which of the following constraints must be used?
+A. Null
+B. Not null
+C. Unique
+D. Distinct
+Đáp Án : B
+
+In SQL query, choose the correct statement about the order of execution.
+A. SELECT - FROM - WHERE - GROUP BY - HAVING - ORDER BY
+B. SELECT - FROM - GROUP BY - WHERE - HAVING - ORDER BY
+C. SELECT - FROM - HAVING - GROUP BY - WHERE - ORDER BY
+D. SELECT - FROM - ORDER BY - WHERE - HAVING - GROUP BY
+Đáp Án : A
+
+What is the full form of DBMS? 
+A. Data of Binary Management System 
+B. Database Management System 
+C. Database Management Service 
+D. Data Backup Management System
+Đáp Án : B
+
+Which of the following belongs to DDL (data definition language)?
+A. Create, alter, drop
+B. Insert, update, delete, select
+C. Truncate, select, invoke
+D. Deny, create, drop
+Đáp Án : A
+
+Which of the following is the appropriate characteristic of a database?
+A. Because a database is created to suit the format of the data, it cannot respond flexibly to data format changes.
+B. The procedure for making backups is complicated.
+C. It is difficult to share data between operations due to an exclusive control function.
+D. It can be accessed by multiple users at the same time due to an exclusive control function.
+Đáp Án : D
+
+In MS-SQL Server, which of the following is true about join operator?
+SELECT * FROM tblCUSTOMER, tblORDER
+A. Cartesian join
+B. Equi-join
+C. Natural join
+D. Outer join
+Đáp Án : A
+
+Given R as a relation, which of the following statements is correct about normalizing data in 3NF form:
+A. If R: Has a primary key, no repeating groups, no multivalued attributes/composite attributes
+B. If R: Has a primary key, no repeating groups, no multivalued attributes/composite attributes, no partial functional dependencies.
+C. If R: Has a primary key, no repeating groups, no multivalued/composite attributes, no transitive dependencies.
+D. If R: Has a primary key, no repeating groups, no multivalued attributes/composite attributes, no transitive functional dependencies, no partial functional dependencies.
+E. If R: has complete functional dependency.
+Đáp Án : D
+
+An E/R diagram is a graphical representation of sets, ___________?
+A. Entity
+B. Attributes
+C. Relationships
+D. All of the others
+Đáp Án : D
+
+Which is the SQL statement that creates an updatable view? In this question, all the tables in the SQL statements are updatable.
+A. CREATE VIEW Ordered_Product(Product_No) AS SELECT DISTINCT Product_No FROM Order
+B. CREATE VIEW Order_List(Order_No, Product_Name, Order_Quantity) AS SELECT Order_No, Product_Name, Order_Quantity FROM Order, Product WHERE Order.Product_No = Product.Product_No
+C. CREATE VIEW Product_Order(Product_No, Order_Quantity) AS SELECT Product_No, SUM(Order_Quantity) FROM Order GROUP BY Product_No
+D. CREATE VIEW Expensive_Product(Product_No, Product_Name) AS SELECT Product_No, Product_Name FROM Product WHERE Product_Unit_Price > 1000
+Đáp Án : D
+
+To convert from ER Diagram to Relational Model, 1-M relationship:
+A. Put key attribute of one-side to M-side
+
+B. Put key attribute of M-side to one-side
+
+C. Generate 1 relation, Primary key of this relation combined from two relations
+
+D. Build a table with two columns, one column for each participating entity set's primary key
+Đáp Án : A
+
+Which SQL statement selects all rows from table called Contest, with column ContestDate having values greater or equal to May 25,2006?
+A. SELECT * FROM Contest WHERE ContestDate >= '05/25/2006'
+
+B. SELECT * FROM Contest GROUP BY ContestDate >= '05/25/2006'
+
+C. SELECT * FROM Contest WHERE ContestDate < '05/25/2006'
+
+D. SELECT * FROM Contest HAVING ContestDate >= '05/25/2006'
+Đáp Án : A
+
+What are the disadvantages of network data model?
+A. Not support the high-level query language
+B. Not support the relationships between nodes
+C. Not support the database management system
+D. Not support the storage method of very large amounts of data
+Đáp Án : A
+
+How is User-defined function different from Store Procedure?
+A. User-defined functions do not have input parameters, Store Procedures do
+B. User-defined functions cannot contain transactions, Store Procedures can
+C. Store Procedure does not have return results, User-defined function does
+D. All of the mentioned answers are incorrect
+Đáp Án : B
+
+Which of the following statements is true regarding Third Normal Form (3NF)?
+A. It eliminates transitive dependencies
+B. It allows for redundant data
+C. It only considers partial dependencies
+D. It doesn't address any anomalies in a database
+Đáp Án : A
+
+In query compiler, which unit transforms the initial query plan into the best available sequence of operations on the actual data?
+A. A query parser
+B. A query preprocessor
+C. A query optimizer
+D. A query processor
+Đáp Án : C
+
+In SQL, when does a BEFORE INSERT trigger fire?
+A. Before the execution of a SELECT statement
+B. Before a new record is inserted into a table
+C. Before a transaction is committed
+D. Before a table is dropped
+Đáp Án : B
+
+The values appearing in given attributes of any tuple in the referencing relation must likewise occur in specified attributes of at least one tuple in the referenced relation, according to ________________ integrity constraint.
+A. Referential
+B. Primary
+C. Referencing
+D. Specific
+Đáp Án : A
+
+A stored procedure in SQL is a __________
+A. Block of functions
+B. Group of Transact-SQL statements compiled into a single execution plan
+C. Group of distinct SQL statements
+D. None of the mentioned
+Đáp Án : B
+
+How can you invoke a user-defined function in a SQL query?
+A. Using the EXECUTE statement
+B. Using the CALL statement
+C. Using the SELECT statement
+D. Using the RUN statement
+Đáp Án : C
+
+What is a Relational Database?
+A. A collection of two or more tables
+B. A database that is able to process queries, forms, reports and macro
+C. The same as an Excel file database
+D. A collection of two or more tables that are joined using relationships
+Đáp Án : D
+
+Which statement is used to disable a foreign key constraint named fk_name during INSERT and UPDATE transactions in table B?
+A. ALTER TABLE B DROP CONSTRAINT fk_name
+B. ALTER TABLE B DISABLE CONSTRAINT fk_name
+C. ALTER TABLE B DISABLE fk_name
+D. ALTER TABLE B NOCHECK CONSTRAINT fk_name
+Đáp Án : D
+
+What is information?
+A. A collection of unprocessed data
+B. A collection of processed data
+C. A collection of processed information
+D. A collection of unprocessed information
+Đáp Án : B
+
+Which key does not accept the null value?
+A. Unique Key
+B. Primary Key
+C. Foreign Key
+D. Candidate key
+Đáp Án : B
+
+Which operation is commonly used to display all the properties derived from the original property?
+A. Union
+B. Intersection
+C. Closure
+D. Projection
+Đáp Án : C
+
+In SQL, what is the purpose of the CLOSE statement in relation to cursors?
+A. To close the database connection
+B. To close the cursor and release associated resources
+C. To close the transaction
+D. To close the result set
+Đáp Án : B
+
+In query compiler, which unit builds a tree structure from the text form of the query?
+A. A query parser
+B. A query preprocessor
+C. A query optimizer
+D. A query processor
+Đáp Án : A
+
+A ____ is a relation name, together with the attributes of that relation.
+A. Schemas
+B. Instance
+C. Database
+D. Attributes
+Đáp Án : A
+
+Regarding difference between a primary key vs. unique key, which of the following is false?
+
+A. There can be only one unique key for a table
+B. A primary key is a key that uniquely identifies each record in a table but cannot store NULL values
+C. A unique key prevents duplicate values in a column and can store NULL values
+D. Only one primary key is allowed to use in a table
+Đáp Án : A
+
+Insert into Students ____ (32, N'Iona Bush', N'Female'); 
+In the given query which of the keyword has to be inserted?
+A. Into
+B. Set
+C. Where
+D. Values
+Đáp Án : D
+
+If attribute A determines both attributes B and C, then it is also true that:
+A. (B, C) → A
+B. C → A
+C. B → A
+D. A → B
+Đáp Án : D
+
+How to execute a procedure
+A. execute name_sp <parameter>
+B. exe name_sp <parameter>
+C. call name_sp <parameter>
+D. All the answers above
+E. a and b are correct
+Đáp Án : A
+
+You have a column named TelephoneNumber that stores numbers as varchar(20). You need to write a query that returns the first three characters of a telephone number. Which expression should you use?
+A. CHARINDEX('[0-9][0-9][0-9]', TelephoneNumber, 3)
+B. SUBSTRING(TelephoneNumber, 3, 1)
+C. SUBSTRING(TelephoneNumber, 3, 3)
+D. LEFT(TelephoneNumber, 3)
+Đáp Án : D
+
+UPDATE instructor
+____ salary = salary * 1.05;
+Fill in with the correct keyword to update the instructor relation.
+A. Where
+B. Set
+C. In
+D. Select
+Đáp Án : B
+
+Which of the following is not a data model in the database?
+A. Conceptual data model
+B. Object-Oriented data model
+C. Network data model
+D. Hierarchical data model
+Đáp Án : A
+
+If a relation is in BCNF, then it is also in
+A. 1 NF
+B. 2 NF
+C. 3 NF
+D. All of the mentioned
+Đáp Án : D
+
+What is Database Normalization?
+A. A process where by a limit is put on the number of fields a record can contain
+B. The process of ensuring that each table has a key
+C. The process of ensuring that a relational database has at least two tables in it
+D. A process whereby the design of a table (relation) is decomposed into more tables that more precisely fit the relational model
+Đáp Án : D
+
+The transaction methods used with the Connection object to save or cancel changes made to the data source are:
+A. Begin Transaction, Rollback Transaction
+B. Begin Transaction, Commit Transaction
+C. Begin Transaction, Commit Transaction, Rollback Transaction
+D. Commit Transaction, Rollback Transaction
+Đáp Án : C
+
+Which of the following is correct?
+A. SELECT datepart(DATE, '10-jan-24')
+B. SELECT datepart('10-jan-24', DATE)
+C. SELECT datepart('10-jan-24', DAY)
+D. SELECT datepart(DAY, '10-jan-24')
+Đáp Án : D
+
+Foreign key constraints are created by using the "____" keyword to refer to the primary key of another table.
+A. Refer
+B. References
+C. Referential
+D. All of the others
+Đáp Án : B
+
+______ has a right side that is a subset of its left side
+A. A trivial FD
+B. A non-trivial FD
+C. A key of relation
+D. A super key of relation
+Đáp Án : A
+
+Which one of the following SQL statements returns the name of the employee (employeename, dept_code, salary) receiving the maximum salary in a particular department?
+A. Select employeename, dept_code, salary From employee Where employee.salary in (select (salary) from Employee group by dept_code having Max(salary))
+B. Select employeename, dept_code, salary From employee Where employee.salary in (select Max(salary) from Employee group by dept_code)
+C. Select employeename, dept_code, salary From employee Where employee.salary in (select Max(salary) from Employee group by dept_code having Max(salary))
+D. Select employeename, dept_code, salary From employee Where employee.salary =(select Max(salary) from Employee group by dept_code)
+Đáp Án : B
+
+What is not the purpose of the index in MS-SQL Server?
+A. To use less hardware resources
+B. To enhance the query performance
+C. To provide an index to a record
+D. To perform fast in searching
+Đáp Án : A
+
+When is it recommended to use a cursor in SQL?
+
+A. Always, as cursors are the most efficient way to process data
+B. When processing data row by row is necessary or unavoidable
+C. Only when creating complex joins between tables
+D. Never, as set-based operations are always more efficient
+Đáp Án : B
+
+In relational database design, which of the following is known as a set of entities of the same type that share the same properties or attributes?
+A. Entity Relation model
+B. Entity set
+C. Field set
+D. Record set
+Đáp Án : B
+
+________ is a set of one or more attributes taken collectively to uniquely identify a record.
+A. Primary Key
+B. Foreign Key
+C. Super Key
+D. Candidate Key
+Đáp Án : C
+
+Which SQL statement is used to declare a cursor?
+A. OPEN
+B. DECLARE
+C. CREATE CURSOR
+D. BEGIN CURSOR
+Đáp Án : B
+
+The deadlock state can be changed back to stable state by using ____________ statement.
+A. Delete
+B. Deadlock
+C. Commit
+D. Rollback
+Đáp Án : D
+
+A data model is a notation for describing data or information. The description generally consists ______?
+A. Structure of the data
+B. Operations on the data
+C. Constraints on the data
+D. All of the others
+Đáp Án : D
+
+The latter clause consists of the keyword ____ followed by a condition about the group.
+A. Having
+B. Group-by
+C. Order by
+D. Where
+Đáp Án : A
+
+Which one of the following is not true for a view?
+A. View never contains derived columns.
+B. A view definition is permanently stored as part of the database.
+C. View is a virtual table.
+D. View is derived from other tables.
+Đáp Án : A
+
+Triggers are stored blocks of code that have to be called in order to operate.
+A. True
+B. False
+Đáp Án : B
+
+What is the purpose of a foreign key in an ERD?
+A. It defines the data type of attributes
+B. It determines the cardinality of relationships
+C. It serves as the primary identifier for a table
+D. It establishes a link between two tables
+Đáp Án : D
+
+Which of the following is false about database trigger?
+A. It automatically runs when an event occurs in the database server
+B. DML triggers are frequently used for enforcing business rules and data integrity.
+C. The same trigger action cannot be defined for more than one user action (for example, INSERT and UPDATE) in the same CREATE TRIGGER statement
+D. When a trigger fires, results are returned to the calling application, just like with stored procedures.
+Đáp Án : D
+
+What are the different events in Triggers?
+A. Select, Insert
+B. Select, Update
+C. Select, Commit
+D. Insert, Update, Delete
+Đáp Án : D
+
+Which of the following is not a feature of DBMS? 
+A. Minimum duplication of data
+B. Redundancy of data
+C. Single-user access only
+D. Support ACID Property
+Đáp Án : C
+
+A/An _____ is a statement gives the user a number of different options in the event, condition, and action parts
+A. Trigger
+B. Stored-function
+C. Index
+D. Stored-procedure
+Đáp Án : A
+
+The transaction methods is used with the Connection object to save or cancel changes made to the data source.
+
+A. Begin Transaction, Rollback Transaction
+B. Begin Transaction, Commit Transaction
+C. Begin Transaction, Commit Transaction, Rollback Transaction
+D. Commit Transaction, Rollback Transaction
+Đáp Án : C
+
+How are composite attributes represented in the relational model?
+A. As individual attributes in the related tables
+B. By creating a new table for each composite attribute
+C. By using a single attribute in the related tables
+D. By using a composite key in the related tables
+Đáp Án : A
+
+The predicate in a where clause can involve Boolean operations such as and. The result of true and unknown is ______ false and unknown is ______ while unknown and unknown is ______
+A. Unknown, unknown, false
+B. True, false, unknown
+C. True, unknown, unknown
+D. Unknown, false, unknown
+Đáp Án : D
+
+How many types of variables are there in Stored Procedure?
+A. Default variable and input variable
+B. Default variable and output variable
+C. Input variable and output variable
+D. Local variables and global variables
+Đáp Án : C
+
+Transaction processing is associated with everything below except.
+A. Producing detail, summery, or exception reports
+B. Recording a business activity
+C. Confirming an action or triggering a response
+D. Maintaining data
+Đáp Án : A
+
+A database administrator: a person or persons responsible for the struc-ture or schema of the database.
+A. True
+B. False
+Đáp Án : A
+
+Suppose that we have a relation R (B, C, D) that satisfies FD's: D -> B and D -> C. Which of the following FD is equivalent to the given dependency functions?
+A. D->BC
+B. D->DB
+C. DB->B
+D. DC->DB
+Đáp Án : A
+
+How are weak entity sets represented in an Entity Relationship Diagram (ERD)?
+A. With rectangle
+B. With diamond shape
+C. With a double-line rectangle
+D. With a dashed oval
+Đáp Án : C
+
+What is the primary goal of normalization in database design?
+A. To increase data redundancy
+B. To simplify data retrieval
+C. To introduce duplicate data
+D. To violate functional dependencies
+Đáp Án : B
+
+Which of the following makes the transaction permanent in the database?
+A. View
+B. Commit
+C. Rollback
+D. Flashback
+Đáp Án : B
+
+"SELECT TOP 100 <column name> FROM <table name>" is the statement and suppose if there are 10 rows in the table then what will be the result?
+A. Return 10 rows with data and 90 blank rows without data
+B. Return all the rows and all columns in the table
+C. Return the field of all the 10 rows
+D. Return error
+Đáp Án : C
+
+In an UPDATE statement, what does the WHERE clause determine?
+A. The order of update
+B. The columns to be updated
+C. The condition for selecting rows to be updated
+D. The table to be updated
+Đáp Án : C
+
+Consider a relation R(A, B, C, D, E) with functional dependencies: AB -> C, B -> C, E -> D, and C -> E. What is/are the key(s) for R?
+A. AC
+B. AD
+C. AB
+D. AE
+Đáp Án : C
+
+What are logical constraints?
+A. The relationships between attributes are represented by relational operations.
+B. The relationships between attributes are represented by comparisons operator.
+C. The relationships between attributes are represented by mathematical expressions.
+D. The relationships between attributes are represented by functional dependencies.
+Đáp Án : D
+
+Which normalization level ensures that there are no repeating groups in tables?
+A. First Normal Form (1NF)
+B. Second Normal Form (2NF)
+C. Third Normal Form (3NF)
+D. Boyce-Codd Normal Form (BCNF)
+Đáp Án : A
+
+The _____ operation allows the combining of two relations by merging pairs of tuples, one from each relation, into a single tuple.
+A. Select
+B. Join
+C. Union
+D. Intersection
+Đáp Án : B
+
+In which line of the following code is the error?
+
+CREATE TRIGGER trigger1 -- 1 
+ON dbo.EMPLOYEE -- 2 
+AFTER FOR INSERT AS -- 3 
+BEGIN -- 4 
+INSERT INTO EMPLOYEE_BACKUP -- 5 
+SELECT * FROM INSERTED -- 6 
+END -- 7
+
+A. Line 1
+B. Line 2
+C. Line 3
+D. Line 5
+E. Line 6
+F. There are no lines in error
+Đáp Án : C
+
+In the relational model of data, what is the result of an algebraic query language?
+A. Data series
+B. Data file
+C. Relation
+D. Database
+Đáp Án : C
+
+What is a weak entity in an ERD?
+A. An entity with no attributes
+B. An entity that participates in a one-to-many relationship
+C. An entity that cannot exist without being related to another entity
+D. An entity with a composite key
+Đáp Án : C
+
+In an employee table to include the attributes whose value always have some value, which of the following constraints must be used?
+A. Null
+B. Not null
+C. Unique
+D. Distinct
+Đáp Án : B
+
+What are the ACID properties of DBMS Transactions?
+A. Atomicity, Consistency, Isolation, Durability
+B. Atomicity, Consistency, Interpolate, Database
+C. Atomicity, Consistency, Inconsistent, Durability
+D. Automatic, Concurrent, Inconsistent, Deadlock-freedom
+Đáp Án : A
+
+Which SQL statement is used to remove an existing index from a table?
+A. DROP INDEX
+B. REMOVE INDEX
+C. DELETE INDEX
+D. UNINDEX TABLE
+Đáp Án : A
+
+What is a composite key in an ERD?
+A. A key that represents a many-to-many relationship
+B. A key that uniquely identifies each record in a table
+C. A key used to link two entities
+D. A key made up of multiple attributes
+Đáp Án : D
+
+Choose the incorrect statement about DELETE and TRUNCATE in SQL Server.
+A. DELETE is used for unconditional removal of data records from Tables; TRUNCATE is used for conditional removal of data records from Tables.
+B. DELETE is a DML command and the operations are logged, whereas TRUNCATE is a DDL command and the operations are not logged.
+C. DELETE removes records and records each deletion in the transaction log whereas TRUNCATE deallocates pages and records each deallocation in the transaction log.
+D. TRUNCATE is generally considered quicker as it makes less use of the transaction log.
+Đáp Án : A
+
+What is the foreign key?
+
+A. It is a relational constraint that enforces referential integrity between two tables
+B. It is a relational constraint that ensures the values in a specific column or set of columns are unique across all the rows in a table
+C. The key that needs to make a data in another table
+D. A collection of data that allows to access and use of that data
+Đáp Án : A
+
+What is the purpose of data normalization in the context of the database design?
+A. Ensure data security
+B. Avoid information anomalies
+C. Make sure data is inherited
+D. Ensuring better data storage
+Đáp Án : B
+
+_____ Real-world thing, distinguishable from other objects, in ERD
+A. Entity
+B. Diagram
+C. Relationship
+D. Primary entity
+Đáp Án : A
+
+Which of the following is NOT true about an aggregate function?
+A. All aggregate functions are nondeterministic.
+B. Performs a calculation on a set of values and returns a single value.
+C. Aggregate functions COUNT(*) ignore null values.
+D. Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+Đáp Án : A
+
+To modify the schema of an existing relation use __________
+A. Create table
+B. Modify table
+C. Alter table
+D. Drop table
+Đáp Án : C
+
+Which of the following statements is true about data normalization:
+A. 1NF: Is a relationship with a primary key and no repeating groups
+B. 2NF: Is 1NF without transitive functional dependencies
+C. 3NF is: 1 NF without partial functional dependencies
+D. All of the above answers are wrong.
+Đáp Án : D
+
+A(n) _____ is a property of the entire relation, rather than of the individual tuples in which each tuple is unique.
+A. Row
+B. Key
+C. Attribute
+D. Field
+Đáp Án : B
+
+What is the value of the query:
+SELECT ' Agnes ' + NULL + ' Allison '
+A. Agnes
+B. Allison
+C. NULL
+D. Agnes Allison
+Đáp Án : C
+
+In the entity-relationship model, what is the entity?
+A. Relationships
+B. Relationships between objects
+C. Objects and relationships between objects
+D. Data objects
+Đáp Án : D
+
+The following SQL statement creates a stored procedure that counts the number of customers in each city from the "Customers" table:
+CREATE PROCEDURE CountOfCustomers 
+ @City nvarchar(30), @CountCus int OUTPUT 
+AS 
+ SET @CountCus = (
+ SELECT COUNT(CustomerID) FROM Customers 
+ WHERE City = @City 
+ GROUP BY City 
+ ) 
+GO;
+Which of the following is the way to execute a procedure?
+A. DECLARE @CountCustomers int 
+EXEC CountOfCustomers @City = 'Berlin', @CountCus = @CountCustomers;
+
+B. DECLARE @CountCustomers int 
+EXEC CountOfCustomers @City = 'Berlin', @CountCus = @CountCustomers OUTPUT;
+
+C. EXECUTE CountOfCustomers 'Berlin', @CountCus = @CountCustomers OUTPUT;
+
+D. DECLARE @CountCustomers int 
+CountOfCustomers @CountCus = @CountCustomers OUTPUT;
+Đáp Án : B
+
+What happens to derived attributes when converting an ERD to a relational model?
+A. They become primary keys in the related tables
+B. They are calculated and stored as regular attributes in the related tables
+C. They become foreign keys in the related tables
+D. They are ignored during the conversion process
+Đáp Án : D
+
+In SQL, what is the primary advantage of using stored procedures?
+A. They allow for the creation of tables
+B. They enhance security by restricting access to data
+C. They provide a way to encapsulate and reuse a set of SQL statements
+D. They are more efficient than regular SQL queries
+Đáp Án : C
+
+Which DDL statement is used to create a new table in a relational database?
+A. INSERT
+B. UPDATE
+C. CREATE
+D. SELECT
+Đáp Án : C
+
+The highest normal form for relation schema R(ABCD) with functional dependencies: F = {AB→ C;D→B,C→ABD} is:
+A. 2NF
+B. 1NF
+C. 3NF
+D. BCNF
+Đáp Án : C
+
+A relational database consists of a collection of
+a) Tables
+b) Fields
+c) Records
+d) Keys
+Đáp Án : a
+
+A ________ in a table represents a relationship among a set of values.
+a) Column
+b) Key
+c) Row
+d) Entry
+Đáp Án : c
+
+The term _______ is used to refer to a row
+.a) Attribute
+b) Tuple
+c) Field
+d) Instance
+Đáp Án : b
+
+The term attribute refers to a ___________ of a table.
+a) Record
+b) Column
+c) Tuple
+d) Key
+Đáp Án : b
+
+For each attribute of a relation, there is a set of permitted values, called the ________ of that attribute.
+a) Domain
+b) Relation
+c) Set
+d) Schema
+Đáp Án : a
+
+Database __________ which is the logical design of the database, and the database _______ which is a snapshot of the data in the database at a given instant in time.
+a) Instance, Schema
+b) Relation, Schema
+c) Relation, Domain
+d) Schema, Instance
+Đáp Án : d
+
+Course(course_id,sec_id,semester)
+Here the course_id,sec_id and semester are __________ and course is a _________
+a) Relations, Attribute
+b) Attributes, Relation
+c) Tuple, Relation
+d) Tuple, Attributes
+Đáp Án : b
+
+A domain is atomic if elements of the domain are considered to be ____________ units.
+a) Different
+b) Indivisbile
+c) Constant
+d) Divisible
+Đáp Án : b
+
+The tuples of the relations can be of ________ order.
+a) Any
+b) Same
+c) Sorted
+d) Constant
+Đáp Án : a
+
+Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record?
+a) Candidate key
+b) Sub key
+c) Super key
+d) Foreign key
+Đáp Án : c
+
+Consider attributes ID, CITY and NAME. Which one of this can be considered as a super key?
+a) NAME
+b) ID
+c) CITY
+d) CITY, ID
+Đáp Án : b
+
+The subset of a super key is a candidate key under what condition?
+a) No proper subset is a super key
+b) All subsets are super keys
+c) Subset is a super key
+d) Each subset is a super key
+Đáp Án : a
+
+Which one of the following cannot be taken as a primary key?
+a) Id
+b) Register number
+c) Dept_id
+d) Street
+Đáp Án : d
+
+An attribute in a relation is a foreign key if the _______ key from one relation is used as an attribute in that relation.
+a) Candidate
+b) Primary
+c) Super
+d) Sub
+Đáp Án : b
+
+The relation with the attribute which is the primary key is referenced in another relation. The relation which has the attribute as a primary key is called ______________
+a) Referential relation
+b) Referencing relation
+c) Referenced relation
+d) Referred relation
+Đáp Án : c
+
+The ______ is the one in which the primary key of one relation is used as a normal attribute in another relation.
+a) Referential relation
+b) Referencing relation
+c) Referenced relation
+d) Referred relation
+Đáp Án : b
+
+A _________ integrity constraint requires that the values appearing in specified attributes of any tuple in the referencing relation also appear in specified attributes of at least one tuple in the referenced relation.
+a) Referential
+b) Referencing
+c) Specific
+d) Primary
+Đáp Án : a
+
+Using which language can a user request information from a database?
+a) Query
+b) Relational
+c) Structural
+d) Compiler
+Đáp Án : a
+
+Student(ID, name, dept name, tot_cred)In this query which attributes form the primary key?
+a) Name
+b) Dept
+c) Tot_cred
+d) ID
+Đáp Án : d
+
+Which one of the following is a procedural language?
+a) Domain relational calculus
+b) Tuple relational calculus
+c) Relational algebra
+d) Query language
+Đáp Án : c
+
+The result which operation contains all pairs of tuples from the two relations, regardless of whether their attribute values match.
+A. Join
+B. Cartesian product
+C. Intersection
+D. Set difference
+Đáp Án : B
+
+The _______operation performs a set union of two "similarly structured" tables
+a) Union
+b) Join
+c) Product
+d) Intersect
+Đáp Án : a
+
+The most commonly used operation in relational algebra for projecting a set of tuple from a relation is
+a) Join
+b) Projection
+c) Select
+d) Union
+Đáp Án : c
+
+The _______ operator takes the results of two queries and returns only rows that appear in both result sets.
+a) Union
+b) Intersect
+c) Difference
+d) Projection
+Đáp Án : b
+
+A ________ is a pictorial depiction of the schema of a database that shows the relations in the database, their attributes, and primary keys and foreign keys.
+a) Schema diagram
+b) Relational algebra
+c) Database diagram
+d) Schema flow
+Đáp Án : a
+
+The _________ provides a set of operations that take one or more relations as input and return a relation as an output.
+a) Schematic representation
+b) Relational algebra
+c) Scheme diagram
+d) Relation flow
+Đáp Án : b
+
+Which one of the following is used to define the structure of the relation, deleting relations and relating schemas?
+a) DML(Data Manipulation Langauge)
+b) DDL(Data Definition Langauge)
+c) Query
+d) Relational Schema
+Đáp Án : b
+
+Which one of the following provides the ability to query information from the database and to insert tuples into, delete tuples from, and modify tuples in the database?
+a) DML(Data Manipulation Langauge)
+b) DDL(Data Definition Langauge)
+c) Query
+d) Relational Schema
+Đáp Án : a
+
+To remove a relation from an SQL database, we use the ______ command.
+a) Delete
+b) Purge
+c) Remove
+d) Drop table
+Đáp Án : d
+
+Updates that violate __________ are disallowed.
+a) Integrity constraints
+b) Transaction control
+c) Authorization
+d) DDL constraints
+Đáp Án : a
+
+The ________ clause is used to list the attributes desired in the result of a query.
+a) Where
+b) Select
+c) From
+d) Distinct
+Đáp Án : b
+
+_____ operator is used for appending two strings.
+a) &
+b) %
+c) ||
+d) _
+Đáp Án : c
+
+In SQL the spaces at the end of the string are removed by _______ function.
+a) Upper
+b) String
+c) Trim
+d) Lower
+Đáp Án : c
+
+The union operation is represented by
+a) ∩
+b) U
+c) -
+d) *
+Đáp Án : b
+
+The intersection operator is used to get the _____ tuples.
+a) Different
+b) Common
+c) All
+d) Repeating
+Đáp Án : b
+
+The union operation automatically __________ unlike the select clause.
+a) Adds tuples
+b) Eliminates unique tuples
+c) Adds common tuples
+d) Eliminates duplicate
+Đáp Án : d
+
+If we want to retain all duplicates, we must write ________ in place of union.
+a) Union all
+b) Union some
+c) Intersect all
+d) Intersect some
+Đáp Án : a
+
+The number of attributes in relation is called as its
+a) Cardinality
+b) Degree
+c) Tuples
+d) Entity
+Đáp Án : b
+
+_____ clause is an additional filter that is applied to the result.
+a) Select
+b) Group-by
+c) Having
+d) Order by
+Đáp Án : c
+
+_________ joins are SQL server default
+a) Outer
+b) Inner
+c) Equi
+d) None of the mentioned
+Đáp Án : b
+
+The _____________ is essentially used to search for patterns in target string.
+a) Like Predicate
+b) Null Predicate
+c) In Predicate
+d) Out Predicate
+Đáp Án : a
+
+A _____ indicates an absent value that may exist but be unknown or that may not exist at all.
+a) Empty tuple
+b) New value
+c) Null value
+d) Old value
+Đáp Án : c
+
+If the attribute phone number is included in the relation all the values need not be entered into the phone number column. This type of entry is given as
+a) 0
+b) -
+c) Null
+d) Empty space
+Đáp Án : c
+
+In an employee table to include the attributes whose value always have some value which of the following constraint must be used?
+A. Null
+B. Not null
+C. Unique
+D. Distinct
+Đáp Án : B
+
+Using the ______ clause retains only one copy of such identical tuples.
+a) Null
+b) Unique
+c) Not null
+d) Distinct
+Đáp Án : d
+
+The primary key must be
+a) Unique
+b) Not null
+c) Both Unique and Not null
+d) Either Unique or Not null
+Đáp Án : c
+
+The result of _____unknown is unknown.
+a) Xor
+b) Or
+c) And
+d) Not
+Đáp Án : d
+
+We can test for the nonexistence of tuples in a subquery by using the _____ construct.
+a) Not exist
+b) Not exists
+c) Exists
+d) Exist
+Đáp Án : b
+
+The phrase "greater than at least one" is represented in SQL by _____
+a) < all
+b) < some
+c) > all
+d) > some
+Đáp Án : d
+
+A Boolean data type that can take values true, false, and________
+a) 1
+b) 0
+c) Null
+d) Unknown
+Đáp Án : d
+
+All aggregate functions except _____ ignore null values in their input collection.
+a) Count(attribute)
+b) Count(*)
+c) Avg
+d) Sum
+Đáp Án : b
+
+If we do want to eliminate duplicates, we use the keyword ______in the aggregate expression.
+a) Distinct
+b) Count
+c) Avg
+d) Primary key
+Đáp Án : a
+
+SQL applies predicates in the _______ clause after groups have been formed, so aggregate functions may be used.
+a) Group by
+b) With
+c) Where
+d) Having
+Đáp Án : d
+
+Subqueries cannot:
+a) Use group by or group functions
+b) Retrieve data from a table different from the one in the outer query
+c) Join tables
+d) Appear in select, update, delete, insert statements.
+Đáp Án : c
+
+Which of the following is not an aggregate function?
+a) Avg
+b) Sum
+c) With
+d) Min
+Đáp Án : c
+
+The EXISTS keyword will be true if:
+a) Any row in the subquery meets the condition only
+b) All rows in the subquery fail the condition only
+c) Both of these two conditions are met
+d) Neither of these two conditions is met
+Đáp Án : a
+
+Which one of the following deletes all the entries but keeps the structure of the relation.
+a) Delete from r where P;
+b) Delete from instructor where dept name= 'Finance';
+c) Delete from instructor where salary between 13000 and 15000;
+d) Delete from instructor;
+Đáp Án : d
+
+_________ are useful in SQL update statements, where they can be used in the set clause.
+a) Multiple queries
+b) Sub queries
+c) Update
+d) Scalar subqueries
+Đáp Án : d
+
+The problem of ordering the update in multiple updates is avoided using
+a) Set
+b) Where
+c) Case
+d) When
+Đáp Án : c
+
+Delete from r where P;
+The above command
+a) Deletes a particular tuple from the relation
+b) Deletes the relation
+c) Clears all entries from the relation
+d) All of the mentioned
+Đáp Án : a
+
+The____condition allows a general predicate over the relations being joined.
+a) On
+b) Using
+c) Set
+d) Where
+Đáp Án : a
+
+Which of the join operations do not preserve non matched tuples?
+a) Left outer join
+b) Right outer join
+c) Inner join
+d) Natural join
+Đáp Án : c
+
+What type of join is needed when you wish to include rows that do not have matching values?
+a) Equi-join
+b) Natural join
+c) Outer join
+d) All of the mentioned
+Đáp Án : c
+
+How many tables may be included with a join?
+a) One
+b) Two
+c) Three
+d) All of the mentioned
+Đáp Án : d
+
+Which are the join types in join condition:
+a) Cross join
+b) Natural join
+c) Join with USING clause
+d) All of the mentioned
+Đáp Án : d
+
+How many join types in join condition:
+a) 2
+b) 3
+c) 4
+d) 5
+Đáp Án : d
+
+Which join refers to join records from the right table that have no matching key in the left table are include in the result set:
+a) Left outer join
+b) Right outer join
+c) Full outer join
+d) Half outer join
+Đáp Án : b
+
+The operation which is not considered a basic operation of relational algebra is
+a) Join
+b) Selection
+c) Union
+d) Cross product
+Đáp Án : a
+
+In SQL the statement select * from R, S is equivalent to
+a) Select * from R natural join S
+b) Select * from R cross join S
+c) Select * from R union join S
+d) Select * from R inner join S
+Đáp Án : b
+
+Which of the following creates a virtual relation for storing the query?
+a) Function
+b) View
+c) Procedure
+d) None of the mentioned
+Đáp Án : b
+
+Which of the following is the syntax for views where v is view name?
+a) Create view v as "query name";
+b) Create "query expression" as view;
+c) Create view v as "query expression";
+d) Create view "query expression";
+Đáp Án : c
+
+Materialised views make sure that
+a) View definition is kept stable
+b) View definition is kept up-to-date
+c) View definition is verified for error
+d) View is deleted after specified time
+Đáp Án : b
+
+Updating the value of the view
+a) Will affect the relation from which it is defined
+b) Will not change the view definition
+c) Will not affect the relation from which it is defined
+d) Cannot determine
+Đáp Án : a
+
+Which of the following is used at the end of the view to reject the tuples which do not satisfy the condition in where clause?
+a) With
+b) Check
+c) With check
+d) All of the mentioned
+Đáp Án : c
+
+A _________ consists of a sequence of query and/or update statements.
+a) Transaction
+b) Commit
+c) Rollback
+d) Flashback
+Đáp Án : a
+
+In order to undo the work of transaction after last commit which one should be used?
+a) View
+b) Commit
+c) Rollback
+d) Flashback
+Đáp Án : c
+
+In case of any shut down during transaction before commit which of the following statement is done automatically?
+a) View
+b) Commit
+c) Rollback
+d) Flashback
+Đáp Án : c
+
+In order to maintain the consistency during transactions, database provides
+a) Commit
+b) Atomic
+c) Flashback
+d) Retain
+Đáp Án : b
+
+Transaction processing is associated with everything below except
+a) Conforming an action or triggering a response
+b) Producing detail summary or exception report
+c) Recording a business activity
+d) Maintaining a data
+Đáp Án : b
+
+A transaction completes its execution is said to be
+a) Committed
+b) Aborted
+c) Rolled back
+d) Failed
+Đáp Án : a
+
+Which of the following is used to get back all the transactions back after rollback?
+a) Commit
+b) Rollback
+c) Flashback
+d) Redo
+Đáp Án : c
+
+______ will undo all statements up to commit?
+a) Transaction
+b) Flashback
+c) Rollback
+d) Abort
+Đáp Án : c
+
+To include integrity constraint in an existing relation use :
+a) Create table
+b) Modify table
+c) Alter table
+d) Drop table
+Đáp Án : c
+
+Which of the following is not an integrity constraint?
+a) Not null
+b) Positive
+c) Unique
+d) Check 'predicate'
+Đáp Án : b
+
+Foreign key is the one in which the ________ of one relation is referenced in another relation.
+A. Foreign key
+B. Primary key
+C. References
+D. Check constraint
+Đáp Án : b
+
+Domain constraints, functional dependency and referential integrity are special forms of _________
+A. Foreign key
+B. Primary key
+C. Assertion
+D. Referential constraint
+Đáp Án : C
+
+Data integrity constraints are used to:
+a) Control who is allowed access to the data
+b) Ensure that duplicate records are not entered into the table
+c) Improve the quality of data entered for a specific property (i.e., table column)
+d) Prevent users from changing the values stored in the table
+Đáp Án : c
+
+Dates must be specified in the format
+a) mm/dd/yy
+b) yyyy/mm/dd
+c) dd/mm/yy
+d) yy/dd/mm
+Đáp Án : b
+
+The database administrator who authorizes all the new users, modifies the database and takes grants privilege is
+a) Super user
+b) Administrator
+c) Operator of operating system
+d) All of the mentioned
+Đáp Án : d
+
+Which of the following is used to access the database server at the time of executing the program and get the data from the server accordingly?
+a) Embedded SQL
+b) Dynamic SQL
+c) SQL declarations
+d) SQL data analysis
+Đáp Án : b
+
+Temporary stored procedures are stored in _________ database.
+a) Master
+b) Model
+c) User specific
+d) Tempdb
+Đáp Án : d
+
+A __________ is a special kind of a store procedure that executes in response to certain action on the table like insertion, deletion or updation of data.
+a) Procedures
+b) Triggers
+c) Functions
+d) None of the mentioned
+Đáp Án : b
+
+Triggers are not supported for
+a) Delete
+b) Update
+c) Views
+d) Insert
+Đáp Án : c
+
+What are the after triggers?
+a) Triggers generated after a particular operation
+b) These triggers run after an insert, update or delete on a table
+c) These triggers run after an insert, views, update or delete on a table
+d) All of the mentioned
+Đáp Án : b
+
+What are the after triggers?
+a) Triggers generated after a particular operation
+b) These triggers run after an insert, update or delete on a table
+c) These triggers run after an insert, views, update or delete on a table
+d) All of the mentioned
+Đáp Án : b
+
+The variables in the triggers are declared using
+a) -
+b) @
+c) /
+d) /@
+Đáp Án : b
+
+Triggers ________ enabled or disabled
+a) Can be
+b) Cannot be
+c) Ought to be
+d) Always
+Đáp Án : a
+
+What are the different in triggers?
+a) Define, Create
+b) Drop, Comment
+c) Insert, Update, Delete
+d) All of the mentioned
+Đáp Án : c
+
+Ranking of queries is done by which of the following?
+a) Group by
+b) Order by
+c) Having
+d) Both Group by and Order by
+Đáp Án : b
+
+Relational Algebra is a __________ query language that takes two relations as input and produces another relation as an output of the query.
+a) Relational
+b) Structural
+c) Procedural
+d) Fundamental
+Đáp Án : c
+
+Which of the following is a fundamental operation in relational algebra?
+a) Set intersection
+b) Natural join
+c) Assignment
+d) None of the mentioned
+Đáp Án : d
+
+Which is a join condition contains an equality operator:
+a) Equijoins
+b) Cartesian
+c) Natural
+d) Left
+Đáp Án : a
+
+Which of the following is not outer join?
+a) Left outer join
+b) Right outer join
+c) Full outer join
+d) All of the mentioned
+Đáp Án : d
+
+The assignment operator is denoted by
+a) ->
+b) <-
+c) =
+d) ==
+Đáp Án : b
+
+An ________ is a set of entities of the same type that share the same properties, or attributes.
+a) Entity set
+b) Attribute set
+c) Relation set
+d) Entity model
+Đáp Án : A
+
+Entity is a _________
+a) Object of relation
+b) Present working model
+c) Thing in real world
+d) Model of relation
+Đáp Án : c
+
+The descriptive property possessed by each entity set is _________
+a) Entity
+b) Attribute
+c) Relation
+d) Model
+Đáp Án : b
+
+Which one of the following uniquely identifies the elements in the relation?
+a) Secondary Key
+b) Primary key
+c) Foreign key
+d) Composite key
+Đáp Án : b
+
+____________ is preferred method for enforcing data integrity
+a) Constraints
+b) Stored Procedure
+c) Triggers
+d) Cursors
+Đáp Án : a
+
+If every non-key attribute is functionally dependent primary key, then the relation will be in
+a) First normal form
+b) Second normal form
+c) Third form
+d) Fourth normal form
+Đáp Án : b
+
+The term for information that describes what type of data is available in a database is:
+a) Data dictionary
+b) data repository
+c) Index data
+d) Metadata
+Đáp Án : d
+
+Who created the first DBMS?
+a) Edgar Frank Codd
+b) Charles Bachman
+c) Charles Babbage
+d) Sharon B. Codd
+Đáp Án : b
+
+Which type of data can be stored in the database?
+a) Image oriented data
+b) Text, files containing data
+c) Data in the form of audio or video
+d) All of the above
+Đáp Án : d
+
+In which of the following formats data is stored in the database management system?
+a) Image
+b) Text
+c) Table
+d) Graph
+Đáp Án : c
+
+Which of the following is not an example of DBMS?
+a) MySQL
+b) Microsoft Acess
+c) IBM DB2
+d) Google
+Đáp Án : d
+
+Which of the following is a feature of the database?
+a) No-backup for the data stored
+b) User interface provided
+c) Lack of Authentication
+d) Store data in multiple locations
+Đáp Án : b
+
+Which of the following is not a function of the database?
+a) Managing stored data
+b) Manipulating data
+c) Security for stored data
+d) Analysing code
+Đáp Án : d
+
+Which of the following is a function of the DBMS?
+a) Storing data
+b) Providing multi-users access control
+c) Data Integrity
+d) All of the above
+Đáp Án : d
+
+Which of the following is a component of the DBMS?
+a) Data
+b) Data Languages
+c) Data Manager
+d) All of the above
+Đáp Án : d
+
+Which of the following is known as a set of entities of the same type that share same properties, or attributes?
+a) Relation set
+b) Tuples
+c) Entity set
+d) Entity Relation model
+Đáp Án : c
+
+What is information about data called?
+a) Hyper data
+b) Tera data
+c) Meta data
+d) Relations
+Đáp Án : c
+
+Which command is used to remove a relation from an SQL?
+a) Drop table
+b) Delete
+c) Purge
+d) Remove
+Đáp Án : a
+
+Which of the following set should be associated with weak entity set for weak entity to be meaningful?
+a) Neighbour set
+b) Strong entity set
+c) Owner set
+d) Identifying set
+Đáp Án : d
+
+Which of the following command is correct to delete the values in the relation teaches?
+a) Delete from teaches;
+b) Delete from teaches where Id ='Null';
+c) Remove table teaches;
+d) Drop table teaches;
+Đáp Án : a
+
+Procedural language among the following is __________
+a) Domain relational calculus
+b) Tuple relational calculus
+c) Relational algebra
+d) Query language
+Đáp Án : c
+
+_________________ operations do not preserve non-matched tuples.
+a) Left outer join
+b) Inner join
+c) Natural join
+d) Right outer join
+Đáp Án : b
+
+Which of the following is not the utility of DBMS?
+a) Backup
+b) Data Loading
+c) Process Organization
+d) File organization
+Đáp Án : c
+
+What does a foreign key combined with a primary key create?
+a) Network model between the tables that connect them
+b) Parent-Child relationship between the tables that connects them
+c) One to many relationship between the tables that connects them
+d) All of the mentioned
+Đáp Án : b
+
+Which of the following establishes a top-to-bottom relationship among the items?
+a) Relational schema
+b) Network schema
+c) Hierarchical schema
+d) All of the mentioned
+Đáp Án : c
+
+The logical design, and the snapshot of the data at a given instant in time is known as?
+a) Instance & Relation
+b) Relation & Schema
+c) Domain & Schema
+d) Schema & Instance
+Đáp Án : d
+
+Database data models usually have a way to go describe limitations on what the data can be, is called
+A. Constraints on the data
+B. Operations on the data
+C. Structure of the data
+D. definition of data
+Đáp Án : A
+
+For the following relations and a Set operation:
+Employee 
+Name | City | Gender
+Nguyen Trung Truc | HCM | Male 
+Le Hong Son | HCM | Male
+
+Customer
+Name | City | Gender 
+Nguyen Trung Truc | HCM | Male 
+Tran Tuyet Nhi | HN | Female
+
+and
+
+Employee \ Customer
+What is the result of the Difference operation?
+A. Name | City | Gender 
+Le Hong Son | HCM | Male
+B. Name | City | Gender 
+Nguyen Trung Truc | HCM | Male 
+Tran Tuyet Nhi | HN | Female
+C. Name | City | Gender 
+Nguyen Trung Truc | HCM | Male 
+Le Hong Son | HCM | Male
+D. Name | City | Gender
+Nguyen Trung Truc | HCM | Male 
+Le Hong Son | HCM | Male 
+Tran Tuyet Nhi | HN | Female
+Đáp Án : A
+
+Suppose that there is a relation R (A, B, C, D, E, G)
+And functional dependencies
+S = {AB→C, D→EG, C→A, BE→C, BC→D, CG → BD, ACD → B, CE → AG}
+Compute {AB}+
+A. ABCD
+B. ABCDE
+C. ABCDG
+D. ABCDEG
+Đáp Án : D
+
+In an ERD, what does a line connecting two entities represent?
+A. An attribute
+B. A relationship
+C. A primary key
+D. A foreign key
+Đáp Án : B
+
+Given that Cartoons and Murder Mysteries are special Movie genres, what is the relationship between entities Cartoons, Murder Mysteries and Movie?
+A. isa relationship
+B. ais relationship
+C. supporting relationship
+D. referential integrity relationship
+Đáp Án : A
+
+A primary key is combined with a foreign key creates:
+A. Parent-Child relationship between the tables that connect them.
+B. Many to many relationship between the tables that connect them.
+C. Network model between the tables that connect them.
+D. None of the mentioned.
+Đáp Án : A
+
+The key for a weak entity set is_?
+A. Zero or more attributes
+B. The set of attributes of supporting relationships
+C. It is possible for an entity set's key to be composed of attributes, some or all of which belong to another entity set
+D. The set of attributes of supporting entity sets
+Đáp Án : C
+
+What data type is best suited for Vietnamese name? (in SQL Server)
+A. Varchar(30)
+B. Nvarchar(30)
+C. Text(30)
+D. Char(30)
+Đáp Án : B
+
+Assuming UserProfile is a table containing a column Proession which accepts NULL value. What is the result of the below query. SET ANSI_NULLS OFF SELECT Profession FROM UserProfile WHERE (Profession <>NULL)
+A. Gives an error.
+B. <> is not an operator in SQL Server
+C. Returns all Professions which has not null values
+D. None of the above.
+Đáp Án : C
+
+In MS-SQL Server, there are three primary SQL commands (INSERT, UPDATE, and DELETE) to modify data
+in a table. Which of the following is false about function of these commands?
+A. These commands allow you to change the data type of a column, add or drop columns, and rename columns, among other operations.
+B. These commands enable the alteration of data within database tables.
+C. Each command has its specific syntax, usage, and allowing you to insert new rows, modifies existing rows, and remove rows from the table.
+D. These commands belong to the Data Manipulation Language (DML) subset of SQL.
+Đáp Án : A
+
+In MS-SQL Server, there are three primary SQL commands (INSERT, UPDATE, and DELETE) to modify data in a table. Which of the following is false about function of these commands?
+
+A. These commands allow you to change the data type of a column, add or drop columns, and rename columns, among other operations.
+B. These commands enable the alteration of data within database tables.
+C. Each command has its specific syntax, usage, and allowing you to insert new rows, modifies existing rows, and remove rows from the table.
+D. These commands belong to the Data Manipulation Language (DML) subset of SQL.
+Đáp Án : A
+
+In SQL, what does the acronym ACID stand for concerning transactions?
+A. Atomicity, Consistency, Isolation, Durability
+B. Association, Concurrency, Integrity, Database
+C. Aggregate, Criteria, Index, Delete
+D. All Columns, Insertion, Deletion
+Đáp Án : A
+
+Through VIEW, is it possible to update data in the original table (that VIEW sees)?
+A. Always updateable
+B. Can never update
+C. Some cases can be updated, some cases cannot
+D. If the View sees a table, it can be updated
+E. All of the mentioned answers are wrong
+Đáp Án : C
+
+Which of the following is not mentioned how does a local variable is defined using T-SQL?
+A. The name of the local variable should begin with "@@" sign as the first character of its name.
+B. A local variable is defined using T-SQL by using statement "DECLARE".
+C. When a variable is first declared, its value is set to NULL. To assign a value to a variable, use the SET statement.
+D. The data type of local variable is declared after its name and assigned a system-supplied or user-defined data type and a length.
+Đáp Án : A
+
+Which type of user-defined function in SQL returns a single value?
+A. Scalar function
+B. Table-valued function
+C. Inline function
+D. Aggregate function
+Đáp Án : A
+
+Which of the following methods fetch data from cursor to access data?
+A. First, last, next, prior, absolute, relative
+B. First, last, next
+C. First, last, next, prior
+D. First, absolute, relative
+Đáp Án : A
+
+When does the Deleted temporary trigger table become populated?
+A. With DELETE and INSERT triggers
+B. With DELETE triggers only
+C. With DELETE, UPDATE, and INSERT triggers
+D. With DELETE and UPDATE triggers
+Đáp Án : D
+
+Let E1 and E2 be two entities in an E/R diagram with simple single-valued attributes. R1 and R2 are two relationships between E1 and E2, where R1 is one-to-many and R2 is many-to-many. R1 and R2 do not have any attributes of their own. What is the minimum
+A. 2
+B. 3
+C. 4
+D. 5
+Đáp Án : B
+
+Which of the following is used to define code that is fired when certain actions or event occur?
+A. You use an application Trigger to fire when certain actions or event occur.
+B. You use an application Cursor to fire when certain actions or event occur.
+C. You use an application Replace to fire when certain actions or event occur.
+D. You use an application Keyword to fire when certain actions or event occur.
+Đáp Án : A
+
+What is a database?
+A. A collection of information that exists over a long period of time. A collection of related data and managed by a database management system.
+B. The database is built based on the relational data model.
+C. Database used to create, update and exploit relational databases.
+D. The database is built based on the relational data model and exploits the relational database.
+Đáp Án : A
+
+Which of the following statements about relational databases is true?
+A. The database is built on a relational data model.
+B. The database is created from excel software.
+C. Relational databases are only relations with attributes that are not primary keys.
+D. Relational database is the relationship between rows and columns in a data table.
+Đáp Án : A
+
+In the relational model, how are relationships represented between tables?
+A. By adding attributes to each table
+B. By creating a new table for each relationship
+C. By adding foreign keys to related tables
+D. By creating a primary key in each table
+Đáp Án : C
+
+This simple SQL queries, uses the three keywords that characterize SQL is.____________?
+A. Count, Sum and Avg
+B. Insert, Update and Delete
+C. Select, From, and Where
+D. And, Or, and Not
+Đáp Án : C
+
+A key:
+A. must always be composed of two or more columns.
+B. can only be one column.
+C. identifies a row.
+D. identifies a column.
+Đáp Án : C
+
+Given table A with n rows and table B with m rows. How many rows of table result by Cartesian product on AxB?
+A. m*n rows
+B. m*n +1 rows
+C. m*n-1 rows
+D. m+n rows
+Đáp Án : A
+
+Which of the following statements is false regarding SQL Correlated sub-queries?
+A. A correlated subquery is not evaluated once for each row processed by the parent statement.
+B. Correlated subqueries are used for row-by-row processing.
+C. Each subquery is executed once for every row of the outer query.
+D. Subqueries always process the innermost query first and the work outward.
+Đáp Án : A
+
+The following SQL statement deletes all data from a table name "Products". Which query fully logs the remove of each record?
+A. TRUNCATE FROM Products *;
+B. DELETE FROM Products;
+C. DELETE* FROM Products;
+D. TRUNCATE TABLE Products;
+Đáp Án : B
+
+Two concurrent executing transactions T1 and T2 are allowed to update the same record in an uncontrolled manner. In such a scenario. The following problem may not occur if database system has no concurrency module and allows concurrent execution of above two transactions.
+Which of the following is correct in this case?
+A. Transaction failure
+B. Dirty read problem
+C. Lost update problem
+D. Inconsistent database state
+Đáp Án : C
+
+What is an SQL virtual table that is constructed from other tables?
+A. Just another table
+B. A view
+C. A relation
+D. Query results
+Đáp Án : B
+
+_______________A variable is local, and its value is not preserved by the DBMS after a running of the function or procedure.
+A. DECLARE
+B. RETURN
+C. CALL
+D. EXEC
+Đáp Án : A
+
+For the following relations and a Set operation:
+Employee
+Name | City | Gender
+Nguyen Trung Truc | HCM | Male
+Le Hong Son | HCM | Male
+
+Customer
+Name | City | Gender
+Nguyen Trung Truc | HCM | Male 
+Tran Tuyet Nhi | HN | Female
+
+and
+
+Employee U Customer
+What is the result of the Union operation?
+A. Name | City | Gender
+Nguyen Trung Truc | HCM | Male 
+Le Hong Son | HCM | Male
+B. Name | City | Gender
+Nguyen Trung Truc | HCM | Male 
+Tran Tuyet Nhi | HN | Female
+C. Name | City | Gender
+Nguyen Trung Truc | HCM | Male
+Le Hong Son HCM | Male
+Nguyen Trung Truc | HCM | Male
+Tran Tuyet Nhi | HN | Female
+D. Name | City | Gender
+Nguyen Trung Truc | HCM | Male
+Le Hong Son | HCM | Male
+Tran Tuyet Nhi | HN | Female
+Đáp Án : D
+
+What is relational algebra?
+A. Relational algebra is a set of operations on relations.
+B. Relational algebra is the decomposition of relations.
+C. Relational algebra is eliminated from relations.
+D. Relational algebra is gone from relations.
+Đáp Án : A
+
+Suppose that we have a relation that possesses data about an individual entity. In Addition, it should not have any multi-valued dependencies.
+Which of the following is the highest normal form for this relation?
+A. 1NF
+B. 2NF
+C. 3NF
+D. 4NF
+Đáp Án : D
+
+Consider a relation R(A,B,C,D,E) with functional dependencies:
+AB->C, B->C, E->D and C->E.
+What is/are the key(s) for R
+A. AC
+B. AD
+C. AB
+D. AE
+Đáp Án : C
+
+Given following schema R(A, B, C, D) and S={A→B, BC, C→D}
+Compute {A}+?
+A. AB
+B. ABC
+C. ABCD
+D. BCD
+Đáp Án : C
+
+Which of the following is false about a foreign key?
+A. Whereas only one foreign key is allowed in a table.
+B. It refers to the field in a table which is the primary key of another table.
+C. It can contain duplicate values and a table in a relational database.
+D. It can also contain NULL values.
+Đáp Án : A
+
+You have a table named Books that has columns named Book Title and Description. There is a full-text index on these columns. You need to return rows from the table in which the word 'computer' exists in either column. Which code segment should you use?
+A. SELECT * FROM Books WHERE FREETEXT(*, 'computer')
+B. SELECT * FROM Books WHERE Book Title LIKE '%computer%'
+C. SELECT * FROM Books WHERE Book Title = '%computer%' OR Description = '%computer%'
+D. SELECT * FROM Books WHERE FREETEXT(Book Title, 'computer')
+Đáp Án : A
+
+Choose the correct statement.
+A. Outer join behave like join operations except on tuples that do not occur in the join results
+B. Projection behave like product operations except on tuples that do not occur in the join results
+C. Intersection behave like project operations except on tuples that occur in the join results
+D. Union behave like join operations except on tuples that occur in the join results
+Đáp Án : A
+
+Which of the following aggregate functions does not ignore nulls in its results?
+A. MIN
+B. MAX
+C. COUNT (*)
+D. COUNT
+Đáp Án : C
+
+Choose the correct statement that belongs to DML.
+A. SELECT, DELETE, INSERT
+B. CREATE, UPDATE, SELECT
+C. TRUNCAT, DELETE, UPDATE
+D. UPDATE, DELETE, ALTER
+Đáp Án : A
+
+Which of the following is true about stored procedure in MS-SQL Server?
+A. They include procedural and SQL statements.
+B. They are stored in Rules folder
+C. They do not need to have a unique name
+D. They are same as void function
+Đáp Án : A
+
+Which statement is the best represents Armstrong's Axiom of Decomposition?
+A. If A → B and A → C, then A → BC
+B. If A → B and B → C, then A → C
+C. If A → B, then AC → BC
+D. If A → B, then B → C
+Đáp Án : C
+
+Which normalization level ensures that each attribute is dependent only on the primary key?
+A. First Normal Form (1NF)
+B. Second Normal Form (2NF)
+C. Third Normal Form (3NF)
+D. Boyce-Codd Normal Form (BCNF)
+Đáp Án : C
+
+What is a derived attribute in an ERD?
+A. An attribute that is calculated from other attributes
+B. An attribute that cannot be calculated
+C. An attribute that is the primary key of an entity
+D. An attribute that represents a relationship
+Đáp Án : A
+
+To covert an entity- relationship diagram to a logical diagram, which of the following will create a new relation that will typically include primary keys from both entities and any additional attributes related to the relationship?
+A. A many-to-many relationship
+B. A recursive relationship
+C. A one-to-many relationship
+D. A one-to-one relationship
+Đáp Án : A
+
+What does the attribute domain define in the relational model?
+A. The primary key of the table
+B. The foreign key references
+C. The cardinality of relationships
+D. The data type and range of values that an attribute can hold
+Đáp Án : D
+
+Which statement is used to change the data type of a column named E in table A?
+A. ALTER TABLE A ALTER COLUMN E [DataType]
+B. ALTER TABLE A ALTER COLUMN E
+C. ALTER TABLE A ALTER E [DataType]
+D. ALTER TABLE A DROP COLUMN E [DataType]
+Đáp Án : A
+
+Suppose relation R(A, B) has the following tuples:
+AB
+-----------------
+1 a
+2 b
+3 a
+4 d
+5 e
+6 a
+7 g
+
+The SQL statement to count distinct rows from column B in relation R
+A. SELECT COUNT DISTINCT B AS 'Total_rows' FROM R;
+B. SELECT (COUNT DISTINCT B) AS 'Total_rows' from R;
+C. SELECT DISTINCT B AS 'Total_rows' from R;
+D. SELECT COUNT (DISTINCT(B)) AS 'total_rows' FROM R;
+Đáp Án : D
+
+In SQL, to update a relation's schema, which one of the following statements can be used?
+A. Insert
+B. Update
+C. Alter
+D. Alter table
+Đáp Án : D
+
+(Choose 2 answers)
+Suppose that we have a relation:
+R(ID, full name, address) and FDs {ID->full name, ID->address}
+What is the highest normal form of R in relational database design?
+Choose correct answers?
+A. 2NF
+B. 1NF
+C. 3NF
+D. BCNF
+Đáp Án : C D
+
+Which of the following is known as a set of entities of the same type that share same properties, or attributes?
+A. Relation set
+B. Tuples
+C. Entity set
+D. Entity Relation model
+Đáp Án : C
+
+Which statement is used to remove a column named E into the relation R?
+A. ALTER TABLE R DROP COLUMN E [DataType]
+B. ALTER TABLE R DROP COLUMN E
+C. ALTER TABLE R DELETE COLUMN E
+D. ALTER TABLE R DELETE COLUMN E [DataType]
+Đáp Án : B
+
+Which of the following is NOT a standard aggregation operator?
+A. Sum
+B. Max
+C. Count
+D. Group
+Đáp Án : D
+
+In order to undo the work of transaction after last commit which one should be used?
+A. View
+B. Commit
+C. Rollback
+D. Flashback
+Đáp Án : C
+
+Which of the following SQL statement remove all of the content from a table name "employees" but keep the schema?
+A. DELETE FROM employees;
+B. TRUNCATE * FROM employees;
+C. DROP TABLE employees;
+D. REMOVE * FROM employees;
+Đáp Án : A
+
+In which objects can Transaction be used?
+A. View, User-defined function
+B. User-defined function, Store Procedure
+C. Store Procedure, Trigger, View
+D. User-defined function, Store Procedure, Trigger
+E. All of the mentioned answers are wrong
+Đáp Án : E
+
+Which of the following is not a typical trigger action?
+A. Insert
+B. Select
+C. Update
+D. Delete
+Đáp Án : B
+
+In the relational DBMS, what is the difference between PRIMARY KEY and UNIQUE KEY?
+A. UNIQUE KEY doesn't accept the NULL value but PRIMARY KEY does
+B. UNIQUE KEY and PRIMARY KEY are the same
+C. A table can have more than one PRIMARY KEY constraint but only one UNIQUE KEY
+D. A table can have more than one UNIQUE KEY constraint but only one PRIMARY KEY
+Đáp Án : D
+
+In relational database design, which normal form of a relation eliminates multi-valued attributes and ensure that data is organized at a fundamental level?
+A. 1NF
+B. 2NF
+C. 3NF
+D. 4NF
+Đáp Án : A
+
+Which SQL clause is used to add a new column to an existing table?
+A. ADD COLUMN
+B. ALTER TABLE ADD COLUMN
+C. INSERT INTO
+D. CREATE COLUMN
+Đáp Án : B
+
+Which one of the following is NOT a DDL command?
+Choose correct answers.
+A. DELETE
+B. CREATE DATABASE
+C. INSERT
+D. USE
+Đáp Án : A, C, D
+
+(Choose 1 answer)
+Choose the correct statement.
+A. Project operator shows list of the attributes we wish to appear in the result.
+B. Select operator shows list of the attributes of one relation we wish to appear in the result.
+C. Union operator shows list of the attributes of two relations we wish to appear in the result.
+D. Rename operator shows list of the rows of one relation we wish to appear in the result.
+Đáp Án : A
+
+Given the table Student(StudId, StudName), table Subject(SubId, SubName) and test score table (StudId, SubName, MarkExam).
+Suppose we need to query: "Find students who have never taken the Arithmetic exam".
+Which of the following operations can we use in SQL statements?
+A. not in
+B. not exists
+C. not in or not exists
+D. not in and not exists at the same time
+E. None of the mentioned answers
+Đáp Án : C
+
+The following SQL updates the first employees(empID = 1) with a new empName and a new City from employees table
+A. UPDATE employees
+SET empName = 'Alfred Schmidt' AND City = 'Frankfurt'
+WHERE empID = 1;
+B. UPDATE employees
+SET empID = 1
+WHERE empName = 'Alfred Schmidt' AND City= 'Frankfurt';
+C. UPDATE employees
+SET empName = 'Alfred Schmidt', City = 'Frankfurt'
+WHERE empID = 1;
+D. UPDATE employees
+SET empID = 1
+WHERE empName = 'Alfred Schmidt', City= 'Frankfurt';
+Đáp Án : C
+
+In the Select clause, the keyword DISTINCT mean?
+A. Specifies that only unique rows can appear in the result set.
+B. Specifies that duplicate rows can appear in the result set.
+C. Specifies that only the first row are to be output from the query result set.
+D. Specifies that only the first 10 percent of the rows are output from the result set.
+Đáp Án : A
+
+In a network data model, a node can be linked to multiple other nodes. What is this relationship called?
+A. many-to-one
+B. one-to-many
+C. many-to-many
+D. one-to-one
+Đáp Án : C
+
+The SQL ALTER statement can be used to:
+A. delete rows from the table.
+B. add rows to the table.
+C. change the table data.
+D. change the table structure.
+Đáp Án : D
+
+NULL is:
+A. Not a value
+B. The same as 0 for integer and blank for character
+C. The same as blank for character
+D. The same as 0 for integer
+Đáp Án : A
+
+With SQL, how do you select all the records from a table named "tbDepartment" where the value of the column "depName" is "E&D department"?
+Choose correct answers.
+A. SELECT * FROM tbDepartment WHERE depName LIKE "E&D department"
+B. SELECT * FROM tbDepartment WHERE depName = "E&D department"
+C. SELECT * FROM tbDepartment WHERE depName LIKE 'E&D department'
+D. SELECT * FROM tbDepartment WHERE depName = "E%D department%
+Đáp Án : A,B,C
+
+Queries and other DML actions are grouped into_______, which are units that must be executed atomically and in isolation from one another.
+A. Transactions
+B. Query compiler
+C. Data files
+D. Buffer manager
+Đáp Án : A
+
+Consider the two relations from our running movie database
+Movies(title, year, length, genre, studioName, producerC#)
+MovieExec(name, address, cert#, netWorth)
+The producerC# component of each Movies tuple must also appear in the cert# component of some MovieExec tuple.
+How can we express this integrity constraint in relational algebra?
+A. π _{producerC#} (Movies)∩π _{cert#} (MovieExec)
+B. π _{producerC#} (Movies)⊆π _{cert#} (MovieExec)
+C. π _{cert#} (MovieExec)⊆π _{producerC#} (Movies)
+D. π _{producerC#} (Movies) = π _{cert#} (MovieExec)
+Đáp Án : B
+
+The relations are constructed by the SQL language processor when it performs its job of executing queries and data modifications, and then thrown away and not stored, are called_______
+A. Stored relations
+B. Temporary tables
+C. Relationships
+D. Procedures
+Đáp Án : B
+
+Which of the following wildcard characters matches any sequence of zero or more characters in a string comparison?
+A. &
+B. $_
+C. _
+D. %
+Đáp Án : D
+
+Which 2 of the following are not aggregate functions in SQL Server?
+A. Sum, Count
+B. Diff, Mult
+C. Sum, Avg
+D. Count, avg
+E. Min, max
+Đáp Án : B
+
+Identify the correct query for viewing only those records wherein the customers have a phone number?
+A. SELECT * from customers where phone IS NOT NULL
+B. SELECT * from customers where phone = NOT NULL
+C. SELECT * from customers where phone NOT NULL
+D. SELECT * from customers where HAVING phone NOT NULL
+Đáp Án : A
+
+Suppose relation R1(A, B) has the following tuples:
+A B
+--------------------------
+1 a
+2 b
+3 c
+4 d
+5 e
+and the relation R2(C, A) has the following tuples
+C A
+--------------------------
+101 1
+102 2
+103 3
+104 1
+105 1
+Which tuple is contained in the result of the following query:
+SELECT R1.B, R2.C
+FROM R1
+RIGHT JOIN R2 ON R1.A = R2.A;
+A. (a, 101) ; (a, 104) ; (a, 105) ; (b, 102) ; (c, 103) ; (d, NULL) ; (e, NULL)
+B. (a, 101) ; (b, 102) ; (c, 103) ; (a, 104) ; (a, 105)
+C. (a, 101) ; (b, 102) ; (c, 103)
+D. (a, 101) ; (a, 104) ; (b, 102) ; (c, 103) ; (e, NULL)
+Đáp Án : B
+
+Which of the following is true about A UNION query?
+A. Combines the output from multiple queries and must include the same number of columns and data types.
+B. Combines the output from no more than two queries and must include the same number of columns and data types.
+C. Combines the output from no more than two queries and does not include the same number of columns and data types.
+D. Combines the output from multiple queries and does not include the same number of columns and data types.
+Đáp Án : A
+
+Which of the following statement removes dbsale and dbsupplier database by using data definition language (DDL)?
+A. DROP DATABASE dbsale, dbsupplier
+B. DROP DATABASE dbsale and dbsupplier
+C. DROP DATABASE dbsale; dbsupplier
+D. DROP DATABASE dbsale + dbsupplier
+Đáp Án : A
+
+Which property of a transaction ensures that the execution of a transaction should not be interfered with by any other transactions executing concurrently?
+A. Atomicity
+B. Durability
+C. Isolation
+D. Consistency
+Đáp Án : C
+
+Which of the commands below undoes the current transaction?
+A. SAVEPOINT
+B. ALTER
+C. ROLLBACK
+D. COMMIT
+Đáp Án : C
+
+A_______ is a stored program that is attached to a table or a view.
+A. pseudofile
+B. embedded SELECT statement
+C. trigger
+D. None of the mentioned is correct.
+Đáp Án : C
+
+A person or persons responsible for the structure or schema of the database is ______.
+A. A User
+B. A Coder
+C. A Customer
+D. A database administrator
+Đáp Án : D
+
+In the context of a DBMS, what is meant by "data integrity"?
+A. The ability to perform multiple queries simultaneously
+B. Ensuring data is consistent, accurate, and reliable
+C. The ability to recover data after a failure
+D. Encrypting data to protect it from unauthorized access
+Đáp Án : B
+
+The primary key is selected from the:
+A. foreign keys.
+B. candidate keys.
+C. determinants.
+D. composite keys.
+Đáp Án : B
+
+Relationships in the E/R model are also represented by relations. The relation for a given relationship R has the following attributes:
+If the relationship has attributes, then these are also attributes of relation R.
+A. True
+B. False
+Đáp Án : A
+
+Which type of relationship connects two entities where one entity can have multiple associations with another entity, but the second entity can only have one association with the first entity?
+A. One-to-One
+B. One-to-Many
+C. Many-to-Many
+D. Many-to-One
+Đáp Án : B
+
+Your database contains a table named Purchases. The table includes a DATETIME column named PurchaseTime that stores the date and time each purchase is made. There is a non-clustered index on the PurchaseTime column. The business team wants a report that displays the total number of purchases made on the current day. You need to write a query that will return the correct results in the most efficient manner. Which Transact-SQL query should you use?
+A. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime = CONVERT(DATE, GETDATE())
+B. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime = GETDATE()
+C. SELECT COUNT(*) FROM Purchases WHERE CONVERT(VARCHAR, PurchaseTime, 112) = CONVERT(VARCHAR, GETDATE()), 112)
+D. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime >= CONVERT(DATE, GETDATE()) AND PurchaseTime < DATEADD(DAY, 1, CONVERT(DATE, GETDATE()))
+Đáp Án : D
+
+Let ParamountMovies be the VIEW defined from the Movies table.
+CREATE VIEW ParamountMovies AS
+SELECT title, year
+FROM Movies
+WHERE studioName = 'Paramount'
+If you execute the statement:
+DROP VIEW ParamountMovies
+choose the correct statement for the Movies table.
+A. Dropping the VIEW does not affect any tuples in the Movies table.
+B. Dropping the VIEW affects some tuples in the Movies table that belong to the VIEW ParamountMovies.
+C. Dropping the VIEW ParamountMovies that was created from the Movies table, so we can no longer query the Movies table.
+D. The Movies table will be drop out the database.
+Đáp Án : A
+
+What is the most useful index we can put on a relation?
+A. Index on a unique attribute
+B. Index not on the key
+C. Index on its key
+D. Index on a numeric attribute
+Đáp Án : C
+
+What is a database trigger in SQL Server?
+A. A stored procedure that runs automatically in response to certain events on a table or view
+B. A scheduled job that runs at specific times
+C. A function that can be called by other stored procedures
+D. A query that retrieves data from the database
+Đáp Án : A
+
+Create a stored procedure named GetEmployeeByID that accepts an EmployeeID as a parameter and returns the corresponding employee's details.
+
+A. CREATE PROCEDURE GetEmployeeByID
+@EmployeeID INT
+AS
+BEGIN
+SELECT * FROM Employees WHERE EmployeeID = @EmployeeID;
+END;
+
+B. CREATE PROCEDURE GetEmployeeByID
+Declare @EmployeeID INT
+AS
+BEGIN
+SELECT * FROM Employees WHERE EmployeeID = @EmployeeID;
+END;
+
+C. CREATE PROCEDURE GetEmployeeByID
+@EmployeeID INT
+AS
+BEGIN
+SELECT * FROM Employees;
+END;
+
+D. CREATE PROCEDURE GetEmployeeByID
+AS
+BEGIN
+Declare @EmployeeID INT
+SELECT * FROM Employees WHERE EmployeeID = @EmployeeID;
+END;
+Đáp Án : A
+
+The intersection operator is used to get the ____ tuples.
+A. Different
+B. Common
+C. All
+D. Repeating
+Đáp Án : B
+
+The % wildcard when used with the LIKE keyword is used to represent a string of characters:
+A. Has a minimum length of 0 characters
+B. Has a minimum length of 1 character, a maximum length of n characters
+C. Has a minimum length of 1 character, a maximum length of 255 characters
+D. Has a minimum length of 1 character, a maximum length of 256 characters
+E. None of the above answers
+Đáp Án : A
+
+Consider the join of a relation R with relation S. If R has m tuples and S has n tuples, then the maximum size of join is:
+A. mn
+B. m+n
+C. (m+n)/2
+D. 2(m+n)
+Đáp Án : A
+
+Regarding the difference between WHERE and HAVING in SQL, which of the following is true?
+A. WHERE is used filter data in an SQL query on aggregated values, HAVING is used on non- the aggregated ones.
+B. WHERE is written after GROUP BY, while HAVING comes before GROUP BY.
+C. WHERE is used filter data in an SQL query on non-aggregated values, HAVING is used on the aggregated ones.
+D. HAVING and WHERE is written before GROUP BY, while HAVING comes before WHERE.
+Đáp Án : C
+
+In SQL, a view is a virtual table based on the result-set of an SQL statement. Which statement is not correct about view?
+A. The UPDATE command is applicable to all views.
+B. The fields in a view are fields from one or more real tables in the database.
+C. The database engine recreates the view, every time a user queries it.
+D. A view always shows up-to-date data.
+Đáp Án : A
+
+Which SQL command is used to undo changes made by a transaction?
+A. COMMIT
+B. ROLLBACK
+C. SAVEPOINT
+D. UNDO
+Đáp Án : B
+
+Correct statement about Stored Procedures
+A. Is a set of SQL statements used to perform a certain task and works like a function in other programming languages
+B. Is an SQL statement used to perform a certain task and works like a function in other programming languages
+C. Is a set of SQL statements used to perform many different tasks and works like a function in other programming languages
+D. a and b are correct
+Đáp Án : A C
+
+The people whose jobs require access to the database for querying, updating, and generating reports; the database primarily exists for their use. What type of this user?
+A. DBA
+B. End users
+C. Database designer
+D. System Analysts and Application Programmers
+Đáp Án : B
+
+Which operation is not typically associated with relational data manipulation?
+A. Deleting attributes
+B. Inserting tuples into a relation
+C. Modifying tuples in a relation
+D. Deleting tuples from a relation
+Đáp Án : A
+
+Choose the correct statement about the impact of declaring a key for a relation R using PRIMARY KEY or UNIQUE:
+A. PRIMARY KEY: does not allow NULL values. UNIQUE: allows NULL values.
+B. PRIMARY KEY: allows NULL values. UNIQUE: does not allow NULL values.
+C. PRIMARY KEY: does not allow NULL values. UNIQUE: does not allow NULL values.
+D. PRIMARY KEY: allows NULL values. UNIQUE: allows NULL values.
+Đáp Án : A
+
+In The Relational Model of Data, a data model is a notation for describing data or information. What are the three descriptions of data and information? Choose three answers
+A. Structure
+B. Relationship
+C. Constraints
+D. Operations
+Đáp Án : A C D
+
+In relational algebra, the natural join operation can be viewed as:
+A. A projection followed by a union
+B. A selection followed by a projection
+C. A Cartesian product followed by a selection and projection
+D. A product followed by a union
+Đáp Án : C
+
+In the relational model, what does "functional dependency" imply?
+A. One attribute uniquely determines another attribute
+B. Each relation depends on another relation
+C. Relations can be modified without affecting each other
+D. All attributes must be independent of each other
+Đáp Án : A
+
+If A → B and B → C, which rule allows us to infer A → C?
+A. Reflexivity
+B. Augmentation
+C. Transitivity
+D. Projection
+Đáp Án : C
+
+The name of a relation and the set of attributes for a relation is called ________.
+A. Schema
+B. Tuple
+C. Domain
+D. Attribute
+Đáp Án : A
+
+A table can be in 3NF but not in 1NF.
+A. True
+B. False
+Đáp Án : B
+
+Which of the following best describes an anomaly that normalization helps to eliminate in relational database design?
+A. Inconsistent data types within a table
+B. Redundant data that leads to storage inefficiency
+C. Insertion, update, or deletion anomalies
+D. Lack of referential integrity between tables
+Đáp Án : C
+
+Normalization is
+A. The process of ensuring that each table has a key
+B. The process whereby a limit is put on the number of fields a record can contain
+C. The process of organizing data efficiently and minimizing repetition, normalization helps maintain data consistency and reduces the risk of errors
+D. The process of ensuring that a relational database has at least two tables
+Đáp Án : C
+
+To convert a table to First Normal Form (1NF), what step must be taken?
+A. Remove redundant data
+B. Ensure each attribute has a unique value
+C. Split the table into smaller tables
+D. Ensure each attribute contains atomic values
+Đáp Án : D
+
+What is the difference between DELETE and TRUNCATE in SQL?
+A. DELETE removes rows based on a condition, and TRUNCATE removes all rows from the table
+B. DELETE is faster and does not generate logs
+C. TRUNCATE allows rollback, but DELETE does not
+D. TRUNCATE can delete specific rows, while DELETE removes all rows
+Đáp Án : A
+
+The Data Definition Language (DDL) in SQL is used to:
+A. Insert, update, and delete data from a database
+B. Define and modify the structure of database objects such as tables, views, and indexes
+C. Query and retrieve data from a database
+D. Manage user permissions and access rights
+Đáp Án : B
+
+In SQL, converting an E/R design to a relational database schema is including:
+A. Turn each entity set into a relation with the same set of attributes.
+B. Replace a relationship by a relation whose attributes are the keys for the connected entity sets.
+C. All of the others.
+D. None of the others.
+Đáp Án : C
+
+How many joins are required for 6 tables to join straight?
+A. 4
+B. 5
+C. 6
+D. 12
+Đáp Án : B
+
+Which of the following statement/s is/are TRUE?
+(1) A column with FOREIGN key constraint does not allow duplicate values.
+(2) A FOREIGN key constraint can be defined to refer to columns with the UNIQUE constraint in another table.
+A. Both the statements are True.
+B. Both the statements are False.
+C. Only statement 1 is True.
+D. Only statement 2 is True.
+Đáp Án : D
+
+Suppose relation R(A, B) has the following tuples:
+A B
+a 5
+b 7
+h 8
+m 3
+c 6
+b 2
+a 9
+Which tuple is contained in the result of the following query:
+SELECT * FROM R WHERE A LIKE 'a%'
+UNION
+SELECT * FROM R WHERE B > 7;
+A. (a, 5); (h, 8)
+B. (a, 5); (a, 9); (h, 8)
+C. (a, 9); (b, 7); (h, 8)
+D. (a, 9)
+Đáp Án : B
+
+The following SQL statement creates a stored procedure that selects Customers from a particular City with a particular PostalCode from the "Customers" table:
+CREATE PROCEDURE SelectAllCustomers
+@City nvarchar(30),
+@PostalCode nvarchar(10)
+AS
+BEGIN
+**SELECT ***
+FROM Customers
+WHERE City = @City
+AND PostalCode = @PostalCode;
+END;
+GO
+Which of the following is the way to execute a procedure?
+A. EXEC SelectAllCustomers @City = 'London',@PostalCode = 'WA11DP';
+B. EXECUTE SelectAllCustomers 'London', 'WA11DP' OUTPUT
+C. EXEC @City = 'London', @PostalCode = 'WA11DP';
+D. EXECUTE SelectAllCustomers
+Đáp Án : A
+
+When does the Inserted temporary trigger table become populated?
+A. With INSERT, UPDATE triggers
+B. With DELETE triggers only
+C. With INSERT, UPDATE, and DELETE triggers
+D. With UPDATE and DELETE triggers
+Đáp Án : A
+
+Which of the following is an example of NoSQL database systems, which are not based on the relational model?
+A. MySQL
+B. PostgreSQL
+C. MongoDB
+D. Oracle Database
+Đáp Án : C
+
+Suppose relation R(A, B, C, D) has the following tuples:
+A B C D
+1 a 101 1000
+2 b 102 1500
+3 c 101 1500
+4 d 101 2000
+5 e 102 1000
+6 f 101 3000
+7 g 101 4000
+Which tuple is contained in the result of the following query:
+SELECT C , AVG(D)
+FROM R
+GROUP BY C
+HAVING AVG(D) > 1000
+ORDER BY C
+A. (101 , 11500) ; (102 , 2500)
+B. (101 , 2300) ; (102 , 1250)
+C. (101 , 5) ; (102 , 2)
+D. (101 , 11500) ; (102 , 1250)
+Đáp Án : B
+
+Which option is the correct relation schema for the table?
+A. Boat: BoatID, BoatName, Color, Status
+B. Boat(BoatID, BoatName, Color, Status)
+C. Boat(BoatID:String,BoatName:String,Color:String, Status:String)
+D. Boat: {BoatID, BoatName, Color, Status}
+Đáp Án : B
+
+What does the relational algebra operation "Projection" do?
+A. Selects rows based on a condition.
+B. Combines rows from two tables.
+C. Selects columns from a table.
+D. Renames a table.
+Đáp Án : C
+
+Which files are created automatically by SQL Server when you create a new database?
+A. primary data file and secondary data file
+B. primary data file and log file
+C. index file and log file
+D. secondary data file and log file
+E. backup file and metadata file
+Đáp Án : B
+
+Which statement about the network data model is true?
+A. It supports high-level query languages like SQL.
+B. It only allows one parent per record.
+C. It organizes data using tables and relations.
+D. It allows each record to have multiple parents and children.
+Đáp Án : D
+
+Which of the following is a relational algebra operation?
+A. Sorting
+B. Indexing
+C. Selection
+D. Compiling
+Đáp Án : C
+
+Consider the relation R(A,B,C,D) and functional dependencies: A→B, C→D.
+Find key of the above relation.
+A. The key is the A column
+B. The key includes two columns (A,C)
+C. The key is the A column or C column
+D. The key is the C column
+Đáp Án : B
+
+Which functional dependency exists in the above table?
+A. ID → NAME
+B. Password → email
+C. Password → NAME
+D. NAME → email
+Đáp Án : A
+
+Assume that there is a table :
+And functional dependencies { ID→NAME, ID→Age, TAX_NUMBER→NAME, AGE
+ID→TAX_NUMBER}
+You are required to specify keys: primary key and unique key for the table "Employee". Choose the most appropriate option for the table
+A. The primary key is the ID column, the unique key is the TAX_NUMBER column
+B. The primary key is the TAX_NUMBER column, the unique key is the ID column
+C. The primary key includes two columns(ID, TAX_NUMBER) and there should not be a unique key.
+D. The primary key is the TAX_NUMBER column , and there should not be a unique key.
+Đáp Án : A
+
+Which constraint ensures that the values of certain attributes in a relation uniquely identify tuples in that relation?
+A. Foreign key constraint
+B. Primary key constraint
+C. Check constraint
+D. Unique constraint
+Đáp Án : B
+
+What is Boyce-Codd Normal Form (BCNF)?
+A. The weakest normal form.
+B. A normal form where every determinant is a candidate key.
+C. A normal form that allows redundancy.
+D. The same as first normal form.
+Đáp Án : B
+
+Consider the relation:
+R(A,B,C,D,E,F,G,K) and functional dependencies :
+A,B → C, B ; C → AD ; D → E ; C,F → B ; G → K
+What is the closure of {A,B}?
+A. {A,B,C,D,E}
+B. {A,B,C,D,E,F}
+C. {B,C,D,E}
+D. {A,B,C,D}
+E. {A,B,C,F,G}
+Đáp Án : A
+
+Consider a relation R(A, B, C, D, E,F) with FDs
+{AB → C, C → D, D → A,D → E }
+Which of the following is the closure of {B,D}?
+A. {ABCDE}
+B. {BCDE}
+C. {ABDEF}
+D. {ABCEF}
+E. {BCEF}
+Đáp Án : A
+
+Consider a relation R(A,B,C,D) and
+Rule 1: If A → C then C → A
+Rule 2: If B → C then BC → C
+Rule 3: If AB → C then A → C and B → C
+Which of the following is NOT valid rule?
+A. Only rule1
+B. None of the given rules are valid
+C. Rule 2, Rule 3
+D. Rule 1, Rule 3
+Đáp Án : D
+
+In an ERD, which of the following best describes a one-to-many (1:M) relationship?
+A. Each instance of Entity A is related to exactly one instance of Entity B
+B. Each instance of Entity A is related to many instances of Entity B
+C. Each instance of both entities is related to exactly one other instance
+D. Entities are not related at all
+Đáp Án : B
+
+What is the main purpose of a conceptual data model in database design?
+A. To write SQL queries for the database
+B. To define the physical structure of tables and indexes
+C. To represent high-level business entities and relationships
+D. To optimize database performance by normalization and decomposition
+Đáp Án : C
+
+Which of the following is an example of a composite attribute?
+A. StudentID with unique value
+B. FullName (split into FirstName and LastName)
+C. EmailAddress with multi-values
+D. DateOfBirth value is accepted with format "dd/mm/yyyy"
+Đáp Án : B
+
+Suộc này made in Trần Tuấn. Đừng leak suộc nhé :>>>?
+A. NHẤT TRÍ Ạ
+B. YÊN TÂM ANH ZAI
+C. YES SIR
+D. OKE Ạ
+Đáp Án : A,B,C,D
+
+Consider two relations:
+MovieStar(name, address, gender, birthdate)
+MovieExec(name, address, cert#, netWorth)
+We wanted the names and addresses of all female movie stars who are also movie executives with a net worth over $10,000,000. What is the correct statement?
+A. SELECT name, address
+FROM MovieStar
+WHERE gender= 'F'
+UNION
+SELECT name, address
+FROM MovieExec
+WHERE netWorth > 10000000
+B. SELECT name, address
+FROM MovieStar
+WHERE gender= 'F'
+INTERSECT
+SELECT name, address
+FROM MovieExec
+WHERE netWorth > 10000000
+C. SELECT name, address
+FROM MovieStar
+WHERE gender= 'F'
+EXCEPT
+SELECT name, address
+FROM MovieExec
+WHERE netWorth > 10000000
+D. None of the others
+Đáp Án : B
+
+The function to get the date value (of the month) in SQL is:
+A. DAYOFMONTH(date)
+B. DATE(date)
+C. DAY(date)
+D. MONTHDAY(date)
+E. None of the above answers
+Đáp Án : C
+
+Which of the following to delete "model" field is "ford" from Cars table?
+A. DELETE FROM Cars WHERE model = 'ford';
+B. DELETE Cars WHERE model = 'ford';
+C. DELETE FROM Cars WITH TIE model is 'ford';
+D. DELETE model = 'ford' WHERE Cars;
+Đáp Án : A
+
+The CREATE TRIGGER statement is used to create the trigger. THE ______ clause specifies the table name on which the trigger is to be attached. The ______ specifies that this is an AFTER IN
+A. for insert, on
+B. On, for insert
+C. For, insert
+D. None of the mentioned
+Đáp Án : B
+
+Which of the following is not a typical trigger action ?
+A. Insert
+B. Select
+C. Update
+D. Delete
+Đáp Án : B
+
+The _______ object is used to execute SQL queries and update statements in JDBC.
+A. ResultSet
+B. Connection
+C. Statement
+D. CallableStatement.
+Đáp Án : C
+
+The Isolation property in transactions ensures that:
+A. Each transaction is encrypted
+B. No two transactions run concurrently
+C. Transactions do not interfere with each other
+D. Only one user accesses the system
+Đáp Án : C
+
+A database administrator: a person or persons responsible for the struc-ture or schema of the database.
+A. True
+B. False
+Đáp Án : A
+
+Which syntax is commonly used for the rename operation in Relational Algebra?
+A. RENAME relation TO new_relation
+B. RENAME attribute IN relation TO new_attribute
+C. ALTER TABLE relation RENAME TO new_relation
+D. SELECT * FROM relation AS new_relation
+Đáp Án : A
+
+Which of the following best defines a database?
+A. A collection of unorganized files
+B. A program used to analyze data
+C. A structured collection of data
+D. A spreadsheet
+Đáp Án : C
+
+The rows of a relation, other than the header row containing the attribute names, are called ________.
+A. Schemas
+B. Tuples
+C. Domains
+D. Attributes
+Đáp Án : B
+
+Which of the following operations cannot be used in relational algebra? Choose two answers
+A. Union
+B. Divide
+C. Select
+D. Loop
+Đáp Án : B, D
+
+Which operation is not part of basic relational algebra?
+A. Projection
+B. Join
+C. Sorting
+D. Selection
+Đáp Án : C
+
+Which SQL command is used to define a table schema?
+A. ALTER TABLE
+B. SELECT
+C. CREATE TABLE
+D. INSERT
+Đáp Án : C
+
+Which relational algebra operator removes attributes from a relation?
+A. Selection (σ)
+B. Projection (π)
+C. Join (⋈)
+D. Union (∪)
+Đáp Án : B
+
+What is the purpose of the RENAME operation in relational algebra? Choose three answers
+A. To avoid ambiguity, especially when joining relations with the same attribute names.
+B. To make query expressions clearer and easier to read.
+C. To resolve naming conflicts in operations like UNION
+D. To search, indexing, and join tables quickly.
+Đáp Án : A
+
+Which of the following is the main requirement of 1NF (First Normal Form)?
+A. No column in the table should contain repeating values or arrays.
+B. Each table contains only one foreign key.
+C. Each table has at least one primary key.
+D. All non-key attributes must be fully dependent on the primary key.
+Đáp Án : A
+
+Consider the relation:
+OrderDetail (orderNumber, productCode, productName, quantity, dateOrdered, salesDiscount)
+And FDs{ orderNumber, productCode->quantity,
+ orderNumber->dateOrdered,
+ productCode->productName, salesDiscount}
+And the key of OrderDetail is {orderNumber, productCode}
+Which of the following is full dependency on the key?
+A. orderNumber, productCode->quantity
+B. orderNumber->dateOrdered
+C. productCode->productName
+D. productCode->productName, salesDiscount
+Đáp Án : A
+
+In a student registration system, which normal form is violated if one field contains multiple course IDs for the same student?
+A. 1NF
+B. 2NF
+C. 3NF
+D. 4NF
+Đáp Án : A
+
+Which normalization form eliminates transitive dependency?
+A. 1NF
+B. 2NF
+C. 3NF
+D. BCNF
+Đáp Án : C
+
+What is the relationship between a weak entity set and its owner entity in an E/R diagram?
+A. One-to-one relationship.
+B. Many-to-many relationship.
+C. Many-to-one relationship.
+D. One-to-many relationship.
+Đáp Án : C
+
+What type of attribute in an ER diagram is represented with a dashed oval?
+A. Multivalued attribute
+B. Derived attribute
+C. Composite attribute
+D. Primary attribute
+Đáp Án : B
+
+There is a foreign-key F in Relation1 that references set of attributes G of Relation2. Suppose a tuple t of Relation1 has non-NULL values in all the attributes of F, call the list of t's values in these attributes t[F], then in Relation2 there must be some tuple that ___ with t[F] on the attributes G.
+A. agrees
+B. disagrees
+C. is not relative
+D. differs with
+Đáp Án : A
+
+In a relational database, which SQL command is used to modify the structure of an existing table?
+A. UPDATE
+B. ALTER
+C. MODIFY
+D. CHANGE
+Đáp Án : B
+
+The ORDER BY clause can only be used in cases ________
+A. GROUP BY queries
+B. SELECT queries
+C. HAVING queries
+D. None of the others
+Đáp Án : B
+
+While executing a join operation between two tables, what type of join returns all rows from the left table and matched rows from the right table?
+A. Inner Join
+B. Right Join
+C. Full Outer Join
+D. Left Join
+Đáp Án : D
+
+Which keyword is used in SQL to filter grouped results?
+A. WHERE
+B. TOP
+C. GROUP BY
+D. HAVING
+Đáp Án : D
+
+Which statement best describes the DELETE command?
+A. Deletes all rows and cannot be rolled back
+B. Deletes the table structure and all its data
+C. Deletes specific rows and can be rolled back
+D. Deletes only columns that exists in DELETE command.
+Đáp Án : C
+
+In query optimization, why is it beneficial for the database engine to use indexes?
+A. To reduce table size
+B. To enforce foreign key constraints
+C. To speed up data retrieval
+D. To convert text to binary
+Đáp Án : C
+
+In database transactions, which isolation level is most restrictive?
+A. READ UNCOMMITTED
+B. READ COMMITTED
+C. REPEATABLE READ
+D. SERIALIZABLE
+Đáp Án : D
+
+In the context of a banking application, which of the following best represents a transaction that violates atomicity? Choose two answers.
+A. A money transfer where funds are withdrawn from one account but not credited to another due to a crash
+B. A funds transfer request fails before any account is updated, so neither the debit nor the credit happens
+C. Both the debit from Account A and the credit to Account B are completed successfully.
+D. Create a new account successfully but can not link it to the customer profile.
+Đáp Án : A
+
+Which two statements correctly describe stored procedures? (Choose two correct answers)
+A. They can return multiple result sets
+B. They are compiled each time they run
+C. They support conditional logic like IF...ELSE
+D. They replace the need for triggers
+Đáp Án : A, C
+
+Which indexes can be automatically created by defining constraints in a table? (Choose two correct answers)
+A. PRIMARY KEY
+B. CHECK
+C. UNIQUE
+D. FOREIGN KEY
+Đáp Án : A, C
+
+MULTIPLE CHOICE
+Given a relation:
+Laptop(model, speed, ram, hd, price)
+What will this function return when called with dbo.GetLaptopPrice(1)?
+CREATE FUNCTION dbo.GetLaptopPrice (@model INT)
+RETURNS BIGINT
+AS
+BEGIN
+ DECLARE @price BIGINT
+ SELECT @price = price FROM Laptop WHERE model = @model
+ RETURN @price
+END
+A. The average laptop price with model = 1
+B. The price of all laptops
+C. The price of laptop with model = 1
+D. The model of laptop with price = 1
+Đáp Án : C
+
+In a relation, rows are called:
+A. Attributes
+B. Fields
+C. Tuples
+D. Keys
+Đáp Án : C
+
+During database design, why is it necessary to identify candidate keys? Choose two answers.
+A. To reduce data type complexity.
+B. To normalize tables faster.
+C. To select the most appropriate primary key.
+D. To remove NULL values.
+Đáp Án : B, C
+
+Given relation R(X, Y, Z, W) with the set of functional dependencies:
+F = { X → Y, Y → Z, Z → W }
+Which of the following is a key for R?
+A. X
+B. Y
+C. XZ
+D. XY
+Đáp Án : A
+
+Consider the relation:
+R(A,B,C) and functional dependencies :
+AB → CB ; C → AD ; A → C
+Which set of functional dependencies is equivalent to the original set?
+A. AB → C, C → A, C → D, A → C
+B. A → C, C → D
+C. AB → D
+D. AB → CBD
+E. AB → C, C → A, C → D, A → C, CD → A
+Đáp Án : A
+
+If two entities in an ER model share the same attribute name but represent different meanings, what should be done during schema transformation?
+A. Always add entity name to the attribute name to make the meaning clear.
+B. Rename one of the attributes to avoid ambiguity
+C. Merge both entities
+D. Ignore the attribute names
+Đáp Án : B
+
+In which scenario would denormalization be considered a good design choice?
+A. When maximizing disk usage is a priority
+B. When minimizing data redundancy is the main goal
+C. When performance of read-heavy queries is critical
+D. When multiple developers are working on schema design
+Đáp Án : C
+
+Which two statements about foreign key constraints are true? (Choose two correct answers)
+A. They enforce referential integrity
+B. They allow orphaned rows in child tables
+C. They can be defined using ALTER TABLE
+D. They replace the need for primary keys
+Đáp Án : A
+
+Assume that all tables, columns are ready, and each customer can place one or more orders. How can you retrieve all customers who have not made any purchases? (choose two options)
+A. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c
+WHERE NOT EXISTS (
+ SELECT 1
+ FROM dbo.Orders AS o
+ WHERE o.CustomerID = c.CustomerID
+);
+B. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c LEFT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+C. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c INNER JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+D. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c RIGHT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+Đáp Án : A
+
+What is the result of a CROSS JOIN in SQL?
+A. Union of tables
+B. Intersection of tables
+C. Cartesian product
+D. Natural join
+Đáp Án : C
+
+Which one of the following is NOT a DDL command?
+Choose correct answers.
+A. DELETE
+B. CREATE DATABASE
+C. INSERT
+D. USE
+Đáp Án : A, C, D
+
+Which two statements about foreign key constraints are true? (Choose two correct answers)
+A. They enforce referential integrity
+B. They allow orphaned rows in child tables
+C. They can be defined using ALTER TABLE
+D. They replace the need for primary keys
+Đáp Án : A, C
+
+Assume that all tables, columns are ready, and each customer can place one or more orders. How can you retrieve all customers who have not made any purchases? (choose two options)
+A. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c
+WHERE NOT EXISTS (
+ SELECT 1
+ FROM dbo.Orders AS o
+ WHERE o.CustomerID = c.CustomerID
+);
+B. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c LEFT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+C. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c INNER JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+D. SELECT c.CustomerID, c.CustomerName, c.Email, c.CreatedDate
+FROM dbo.Customers AS c RIGHT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
+Đáp Án : A
+
+Given two relations:
+Printer(maker, model, type)
+PC(model,speed, ram,hd,, price)
+What does this query return?
+SELECT maker FROM Product WHERE model NOT IN (
+ SELECT model FROM PC
+);
+A. Makers of all devices
+B. Makers that also build PCs
+C. Makers of non-PC devices
+D. Makers of PCs only
+Đáp Án : C
+
+Assume that the table Cars and it's columns are ready.
+Which of the following to update the "colour" field to "Silver" for all records where model is "Escape" from Cars table?
+A. UPDATE Cars
+SET colour = 'Silver'
+WHERE model = 'Escape';
+B. UPDATE Cars
+SET model = 'Escape'
+WHERE colour = 'Silver';
+C. UPDATE Cars
+SET colour = 'Silver'
+D. UPDATE FROM Cars
+SET colour = 'Silver'
+WHERE model = 'Escape';
+Đáp Án : A
+
+Which of the following accurately represents the purpose of a transaction in a database system? Choose two answers.
+A. To maintain data integrity and consistency.
+B. To define access permissions
+C. To ensure a sequence of operations is completed fully or not at all
+D. To allow concurrent modifications without restrictions
+Đáp Án : A
